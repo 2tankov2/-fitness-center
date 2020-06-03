@@ -7,7 +7,7 @@
 .container--header-links a {
   font-family: "bebas_neue", "Arial", cursive;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 20px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -23,9 +23,9 @@
 
 .container--header-center {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 62px;
   align-items: center;
 }
 

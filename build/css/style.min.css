@@ -168,7 +168,7 @@ input[type=radio].visually-hidden {
 }
 
 .button {
-  width: 230px;
+  width: 234px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +178,7 @@ input[type=radio].visually-hidden {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 24px 0;
+  padding: 20px 0;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
@@ -226,11 +226,11 @@ input[type=radio].visually-hidden {
   font-size: 12px;
   line-height: 14px;
   margin: 0;
-  padding: 0 0 45px;
+  padding: 0 0 43px;
 }
 
 .page-header__social-item {
-  padding-top: 24px;
+  padding-top: 20px;
 }
 
 .page-header__social-item a {
@@ -241,8 +241,8 @@ input[type=radio].visually-hidden {
 .wrapper {
   width: 85%;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 51px;
+  padding-top: 31px;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -257,7 +257,7 @@ input[type=radio].visually-hidden {
 
 .container--header-links a {
   font-size: 26px;
-  line-height: 26px;
+  line-height: 20px;
   color: #fff;
 }
 
@@ -272,11 +272,11 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 62px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -291,8 +291,8 @@ input[type=radio].visually-hidden {
 }
 
 .container--gym {
-  width: 74.2%;
   margin: 169px auto 128px;
+  width: 74.2%;
 }
 
 .container--gym h2,
@@ -304,32 +304,35 @@ input[type=radio].visually-hidden {
 }
 
 .container--gym h2 {
+  font-size: 49px;
+  line-height: 49px;
   color: #102654;
 }
 
 .main-screen {
-  position: relative;
+  width: 32.5%;
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 122px;
-  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-top: 118px;
+  padding-bottom: 44px;
 }
 
 .main-screen p {
   margin: 0;
 }
 
-.container--gym h2,
 .main-screen__town {
   font-size: 49px;
   line-height: 49px;
+  padding-bottom: 5px;
 }
 
 .main-screen__name {
   font-weight: 700;
-  font-size: 109px;
+  font-size: 111px;
   line-height: 109px;
 }
 

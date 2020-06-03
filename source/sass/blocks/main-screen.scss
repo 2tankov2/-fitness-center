@@ -1,10 +1,11 @@
 .main-screen {
-  position: relative;
+  width: 32.5%;
   text-align: right;
   display: flex;
   flex-direction: column;
-  padding-top: 122px;
-  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-top: 118px;
+  padding-bottom: 44px;
 }
 
 .main-screen p {
@@ -17,10 +18,11 @@
 .main-screen__town {
   font-size: 49px;
   line-height: 49px;
+  padding-bottom: 5px;
 }
 
 .main-screen__name {
   font-weight: bold;
-  font-size: 109px;
+  font-size: 111px;
   line-height: 109px;
 }
