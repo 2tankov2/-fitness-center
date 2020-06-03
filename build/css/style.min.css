@@ -244,14 +244,8 @@ input[type=radio].visually-hidden {
   justify-content: space-between;
 }
 
-.container--header-links a,
-.main-screen p {
-  font-family: "bebas_neue","Arial",cursive;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-}
-
 .container--header-links a {
+  font-family: "bebas_neue","Arial",cursive;
   font-size: 26px;
   line-height: 26px;
   color: #fff;
@@ -264,39 +258,61 @@ input[type=radio].visually-hidden {
   background-size: contain;
 }
 
-.container--header-center,
-.main-screen {
+.container--header-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container--header-center {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  text-align: left;
   margin-bottom: 80px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: left;
+}
+
+.container--gym,
+.main-screen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.container--gym {
+  width: 74.2%;
+  margin: 169px auto 128px;
+}
+
+.container--gym h2,
+.container--header-links a,
+.main-screen p {
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.container--gym h2 {
+  color: #102654;
+  font-family: "Bebas Neue","Arial",cursive;
 }
 
 .main-screen {
   position: relative;
   text-align: right;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 122px;
   padding-bottom: 45px;
 }
 
 .main-screen p {
+  font-family: "bebas_neue","Arial",cursive;
   margin: 0;
 }
 
+.container--gym h2,
 .main-screen__town {
   font-size: 49px;
   line-height: 49px;
@@ -314,11 +330,32 @@ input[type=radio].visually-hidden {
   padding: 0;
 }
 
+.gym__info p,
 .services-list li {
   font-style: normal;
+  line-height: 150%;
+}
+
+.services-list li {
+  text-align: right;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
-  text-align: right;
+}
+
+.gym {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gym__info p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #102654;
+}
+
+.gym__info p:first-child {
+  font-weight: 400;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.min.css.map */
