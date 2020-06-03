@@ -3,6 +3,7 @@
 }
 
 .gym__info p {
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -11,6 +12,7 @@
   color: #102654;
 
   &:first-child {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
   }

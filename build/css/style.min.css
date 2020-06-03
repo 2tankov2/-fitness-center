@@ -134,9 +134,15 @@ input[type=radio].visually-hidden {
 
 @font-face {
   font-weight: 400;
+  font-family: "Roboto Condensed Light";
+  font-style: normal;
+  src: url("../fonts/robotocondensed-light.woff2") format("woff2"),url("../fonts/robotocondensed-light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
   font-family: "Roboto Condensed";
   font-style: normal;
-  font-display: swap;
   src: url("../fonts/robotocondensed-regular.woff2") format("woff2"),url("../fonts/robotocondensed-regular.woff") format("woff");
 }
 
@@ -144,16 +150,21 @@ input[type=radio].visually-hidden {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-style: normal;
-  font-display: swap;
   src: url("../fonts/robotocondensed-bold.woff2") format("woff2"),url("../fonts/robotocondensed-bold.woff") format("woff");
 }
 
 @font-face {
-  font-weight: 400;
   font-family: "bebas_neue";
+  src: url("../fonts/bebasneue_regular.woff2") format("woff2"),url("../fonts/bebasneue_bold.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
-  src: url("../fonts/bebasneue-regular-webfont.woff2") format("woff2"),url("../fonts/bebasneue-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bebas_neue";
+  src: url("../fonts/bebasneue_bold.woff2") format("woff2"),url("../fonts/bebasneue_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 .button {
@@ -245,7 +256,6 @@ input[type=radio].visually-hidden {
 }
 
 .container--header-links a {
-  font-family: "bebas_neue","Arial",cursive;
   font-size: 26px;
   line-height: 26px;
   color: #fff;
@@ -288,13 +298,13 @@ input[type=radio].visually-hidden {
 .container--gym h2,
 .container--header-links a,
 .main-screen p {
+  font-family: "bebas_neue","Arial",cursive;
   letter-spacing: .03em;
   text-transform: uppercase;
 }
 
 .container--gym h2 {
   color: #102654;
-  font-family: "Bebas Neue","Arial",cursive;
 }
 
 .main-screen {
@@ -308,7 +318,6 @@ input[type=radio].visually-hidden {
 }
 
 .main-screen p {
-  font-family: "bebas_neue","Arial",cursive;
   margin: 0;
 }
 
@@ -349,12 +358,14 @@ input[type=radio].visually-hidden {
 }
 
 .gym__info p {
+  font-family: "Roboto Condensed Light","Arial",sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #102654;
 }
 
 .gym__info p:first-child {
+  font-family: "Roboto Condensed","Arial",sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
