@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--header-links a {
+  font-family: "bebas_neue", "Arial", cursive;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.container--main-screen {
+  background-image: url("../../img/men-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  background-size: contain;
+}
+
+.container--header-center {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 80px;
+  align-items: center;
+}

@@ -1,3 +1,28 @@
 .page-header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  color: #ffffff;
+}
+
+.page-header__social {
+  list-style: none;
+
+  padding: 0;
+  align-self: flex-end;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.page-header__social-item {
+  padding-top: 24px;
+}
+
+.page-header__social-item a {
+  color: #ffffff;
+  text-transform: uppercase;
 }
