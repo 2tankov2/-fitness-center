@@ -233,6 +233,7 @@ input[type=radio].visually-hidden {
   padding-top: 20px;
 }
 
+.container--header-links a,
 .page-header__social-item a {
   color: #fff;
   text-transform: uppercase;
@@ -256,9 +257,10 @@ input[type=radio].visually-hidden {
 }
 
 .container--header-links a {
+  font-family: "bebas_neue","Arial",cursive;
   font-size: 26px;
   line-height: 20px;
-  color: #fff;
+  letter-spacing: .03em;
 }
 
 .container--main-screen {
@@ -291,16 +293,8 @@ input[type=radio].visually-hidden {
 }
 
 .container--gym {
-  margin: 169px auto 128px;
-  width: 74.2%;
-}
-
-.container--gym h2,
-.container--header-links a,
-.main-screen p {
-  font-family: "bebas_neue","Arial",cursive;
-  letter-spacing: .03em;
-  text-transform: uppercase;
+  margin: 166px auto 128px;
+  width: 76%;
 }
 
 .container--gym h2 {
@@ -320,7 +314,11 @@ input[type=radio].visually-hidden {
   padding-bottom: 44px;
 }
 
+.container--gym h2,
 .main-screen p {
+  font-family: "bebas_neue","Arial",cursive;
+  letter-spacing: .03em;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -342,34 +340,81 @@ input[type=radio].visually-hidden {
   padding: 0;
 }
 
-.gym__info p,
 .services-list li {
   font-style: normal;
-  line-height: 150%;
-}
-
-.services-list li {
-  text-align: right;
   font-weight: 400;
   font-size: 14px;
+  line-height: 150%;
+  text-align: right;
 }
 
 .gym {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 13px;
+}
+
+.gym__info {
+  width: 34%;
+  padding-bottom: 132px;
+}
+
+.gym__info h3,
+.gym__info p {
+  font-family: "Roboto Condensed","Arial",cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #102654;
+  margin: 0;
+  padding-bottom: 43px;
 }
 
 .gym__info p {
-  font-family: "Roboto Condensed Light","Arial",sans-serif;
+  font-family: "Roboto Condensed Light","Arial",cursive;
+  font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  color: #102654;
+  line-height: 150%;
+  padding-bottom: 7px;
 }
 
-.gym__info p:first-child {
-  font-family: "Roboto Condensed","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+.gym__video {
+  position: relative;
+  width: 660px;
+  background-image: url("../img/gym-desktop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gym__video img {
+  padding-top: 180px;
+  padding-left: 23px;
+}
+
+.gym__video-play img {
+  padding: 0;
+}
+
+.gym__video-play {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  bottom: 65px;
+  left: 155px;
+  outline: 0;
+}
+
+.gym__video-play:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.gym__video-play:active {
+  -webkit-transform: scale(.8);
+  transform: scale(.8);
+  opacity: .3;
 }
 /*# sourceMappingURL=style.min.css.map */

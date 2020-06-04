@@ -1,19 +1,70 @@
 .gym {
   display: flex;
+  margin-top: 13px;
+}
+
+.gym__info {
+  width: 34%;
+  padding-bottom: 132px;
+}
+
+.gym__info h3 {
+  font-family: "Roboto Condensed", "Arial", cursive;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  color: #102654;
+
+  margin: 0;
+  padding-bottom: 43px;
 }
 
 .gym__info p {
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-family: "Roboto Condensed Light", "Arial", cursive;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
   color: #102654;
+  margin: 0;
+  padding-bottom: 7px;
+}
 
-  &:first-child {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 18px;
+.gym__video {
+  position: relative;
+  width: 660px;
+  background-image: url("../../img/gym-desktop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gym__video img {
+  padding-top: 180px;
+  padding-left: 23px;
+}
+
+.gym__video-play img {
+  padding: 0;
+}
+
+.gym__video-play {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  bottom: 65px;
+  left: 155px;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
+
+
