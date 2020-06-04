@@ -19,6 +19,11 @@
   background-repeat: no-repeat;
   background-position: 70% 50%;
   background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/men-desktop@2x.jpg");
+    background-size: 500px auto;
+  }
 }
 
 .container--header-center {
@@ -64,9 +69,25 @@
     background-image: url("../../img/men-tablet.jpg");
     background-position: 100% top;
     background-size: 324px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/men-tablet@2x.jpg");
+      background-size: 324px auto;
+    }
   }
 
   .container--header-center {
     margin-bottom: 45px;
+  }
+
+  .container--gym {
+    width: 88.3%;
+    align-items: center;
+    margin: 97px auto;
+  }
+
+  .container--gym h2 {
+    font-size: 42px;
+    line-height: 42px;
   }
 }

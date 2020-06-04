@@ -290,6 +290,13 @@ input[type=radio].visually-hidden {
   background-size: contain;
 }
 
+@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi),(min-resolution:1.5dppx) {
+  .container--main-screen {
+    background-image: url("../img/men-desktop@2x.jpg");
+    background-size: 500px auto;
+  }
+}
+
 .container--header-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,9 +344,31 @@ input[type=radio].visually-hidden {
     background-position: 100% top;
     background-size: 324px auto;
   }
+}
 
+@media (max-width:1199px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:1199px) and (min-resolution:144dpi),(max-width:1199px) and (min-resolution:1.5dppx) {
+  .container--main-screen {
+    background-image: url("../img/men-tablet@2x.jpg");
+    background-size: 324px auto;
+  }
+}
+
+@media (max-width:1199px) {
   .container--header-center {
     margin-bottom: 45px;
+  }
+
+  .container--gym {
+    width: 88.3%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 97px auto;
+  }
+
+  .container--gym h2 {
+    font-size: 42px;
+    line-height: 42px;
   }
 }
 
@@ -454,6 +483,13 @@ input[type=radio].visually-hidden {
   background-repeat: no-repeat;
 }
 
+@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi),(min-resolution:1.5dppx) {
+  .gym__video {
+    background-image: url("../img/gym-desktop@2x.jpg");
+    background-size: contain;
+  }
+}
+
 .gym__video img {
   padding-top: 180px;
   padding-left: 23px;
@@ -482,5 +518,76 @@ input[type=radio].visually-hidden {
   -webkit-transform: scale(.8);
   transform: scale(.8);
   opacity: .3;
+}
+
+@media (max-width:1199px) {
+  .gym,
+  .gym__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym__info {
+    width: 74%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 37px;
+  }
+
+  .gym__info h3 {
+    padding-bottom: 39px;
+  }
+
+  .gym__info p {
+    text-align: center;
+  }
+
+  .gym__info p:last-child {
+    display: none;
+  }
+
+  .gym__video {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url("../img/gym-tablet.jpg");
+    background-size: contain;
+  }
+}
+
+@media (max-width:1199px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:1199px) and (min-resolution:144dpi),(max-width:1199px) and (min-resolution:1.5dppx) {
+  .gym__video {
+    background-image: url("../img/gym-tablet@2x.jpg");
+    background-size: contain;
+  }
+}
+
+@media (max-width:1199px) {
+  .gym__video img {
+    padding-top: 260px;
+    padding-left: 0;
+  }
+
+  .gym__video-play {
+    width: 73px;
+    height: 73px;
+    bottom: 46px;
+    left: 301px;
+  }
+
+  .gym__video-play img {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
