@@ -212,6 +212,12 @@ input[type=radio].visually-hidden {
   border-color: green;
 }
 
+@media (max-width:1199px) {
+  .button--subscription-buy {
+    width: 187px;
+  }
+}
+
 .page-header {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
   color: #fff;
@@ -239,11 +245,25 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 }
 
+@media (max-width:1199px) {
+  .page-header__social {
+    display: none;
+  }
+}
+
 .wrapper {
   width: 85%;
   margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 50px;
+}
+
+@media (max-width:1199px) {
+  .wrapper {
+    width: 88.3%;
+    padding-top: 38px;
+    padding-bottom: 81px;
+  }
 }
 
 .container {
@@ -284,23 +304,43 @@ input[type=radio].visually-hidden {
   align-items: center;
 }
 
-.container--gym,
-.main-screen {
+.container--gym {
+  width: 76%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.container--gym {
   margin: 166px auto 128px;
-  width: 76%;
 }
 
 .container--gym h2 {
   font-size: 49px;
   line-height: 49px;
+  letter-spacing: .03em;
   color: #102654;
+}
+
+@media (max-width:1199px) {
+  .container--header-links {
+    margin-bottom: 20px;
+  }
+
+  .container--header-links a {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: .03em;
+  }
+
+  .container--main-screen {
+    padding-bottom: 24px;
+    background-image: url("../img/men-tablet.jpg");
+    background-position: 100% top;
+    background-size: 324px auto;
+  }
+
+  .container--header-center {
+    margin-bottom: 45px;
+  }
 }
 
 .main-screen {
@@ -309,6 +349,10 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-left: 20px;
   padding-top: 118px;
   padding-bottom: 44px;
@@ -317,21 +361,43 @@ input[type=radio].visually-hidden {
 .container--gym h2,
 .main-screen p {
   font-family: "bebas_neue","Arial",cursive;
-  letter-spacing: .03em;
   text-transform: uppercase;
   margin: 0;
 }
 
 .main-screen__town {
+  letter-spacing: .03em;
   font-size: 49px;
   line-height: 49px;
   padding-bottom: 5px;
 }
 
 .main-screen__name {
+  letter-spacing: .03em;
   font-weight: 700;
   font-size: 111px;
   line-height: 109px;
+}
+
+@media (max-width:1199px) {
+  .main-screen {
+    width: 47.8%;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 54px;
+  }
+
+  .main-screen__town {
+    font-size: 34px;
+    line-height: 34px;
+    padding-bottom: 2px;
+  }
+
+  .main-screen__name {
+    font-size: 90px;
+    line-height: 86px;
+    letter-spacing: .014em;
+  }
 }
 
 .services-list {

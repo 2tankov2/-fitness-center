@@ -10,19 +10,41 @@
 
 .main-screen p {
   font-family: "bebas_neue", "Arial", cursive;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
 }
 
 .main-screen__town {
+  letter-spacing: 0.03em;
   font-size: 49px;
   line-height: 49px;
   padding-bottom: 5px;
 }
 
 .main-screen__name {
+  letter-spacing: 0.03em;
   font-weight: bold;
   font-size: 111px;
   line-height: 109px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen {
+    width: 47.8%;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 54px;
+  }
+
+  .main-screen__town {
+    font-size: 34px;
+    line-height: 34px;
+    padding-bottom: 2px;
+  }
+
+  .main-screen__name {
+    font-size: 90px;
+    line-height: 86px;
+    letter-spacing: 0.014em;
+  }
 }

@@ -26,3 +26,9 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+
+@media (max-width: $tablet-width) {
+  .page-header__social {
+    display: none;
+  }
+}

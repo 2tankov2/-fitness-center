@@ -38,3 +38,9 @@
     border-color: green;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .button--subscription-buy {
+    width: 187px;
+  }
+}

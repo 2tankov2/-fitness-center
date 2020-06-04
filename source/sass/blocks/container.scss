@@ -47,3 +47,26 @@
 
   color: #102654;
 }
+
+@media (max-width: $tablet-width) {
+  .container--header-links {
+    margin-bottom: 20px;
+  }
+
+  .container--header-links a {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+
+  .container--main-screen {
+    padding-bottom: 24px;
+    background-image: url("../../img/men-tablet.jpg");
+    background-position: 100% top;
+    background-size: 324px auto;
+  }
+
+  .container--header-center {
+    margin-bottom: 45px;
+  }
+}
