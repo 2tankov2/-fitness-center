@@ -75,14 +75,15 @@
 @media (max-width: $tablet-width) {
   .gym {
     flex-direction: column;
+    justify-content: center;
   }
 
   .gym__info {
     width: 74%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding-bottom: 37px;
   }
 
@@ -100,14 +101,17 @@
 
   .gym__video {
     width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     background-image: url("../../img/gym-tablet.jpg");
     background-size: contain;
+    background-position: center top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/gym-tablet@2x.jpg");
       background-size: contain;
+      background-position: center top;
     }
   }
 
@@ -119,8 +123,8 @@
   .gym__video-play {
     width: 73px;
     height: 73px;
-    bottom: 46px;
-    left: 301px;
+    bottom: 11.5%;
+    left: 44.5%;
   }
 
   .gym__video-play img {

@@ -12,3 +12,11 @@
     padding-bottom: 81px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .wrapper {
+    width: 91%;
+    padding-top: 18px;
+    padding-bottom: 79px;
+  }
+}

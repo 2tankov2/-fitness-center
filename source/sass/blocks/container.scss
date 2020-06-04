@@ -91,3 +91,22 @@
     line-height: 42px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .container--header-links a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .container--main-screen {
+    background-image: none;
+  }
+
+  .container--header-center {
+    margin-bottom: 47px;
+  }
+
+  .container--main-screen {
+    padding-bottom: 0;
+  }
+}

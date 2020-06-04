@@ -218,6 +218,12 @@ input[type=radio].visually-hidden {
   }
 }
 
+@media (max-width:767px) {
+  .button--subscription-buy {
+    width: 100%;
+  }
+}
+
 .page-header {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
   color: #fff;
@@ -263,6 +269,14 @@ input[type=radio].visually-hidden {
     width: 88.3%;
     padding-top: 38px;
     padding-bottom: 81px;
+  }
+}
+
+@media (max-width:767px) {
+  .wrapper {
+    width: 91%;
+    padding-top: 18px;
+    padding-bottom: 79px;
   }
 }
 
@@ -372,6 +386,25 @@ input[type=radio].visually-hidden {
   }
 }
 
+@media (max-width:767px) {
+  .container--header-links a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .container--main-screen {
+    background-image: none;
+  }
+
+  .container--header-center {
+    margin-bottom: 47px;
+  }
+
+  .container--main-screen {
+    padding-bottom: 0;
+  }
+}
+
 .main-screen {
   width: 32.5%;
   text-align: right;
@@ -426,6 +459,23 @@ input[type=radio].visually-hidden {
     font-size: 90px;
     line-height: 86px;
     letter-spacing: .014em;
+  }
+}
+
+@media (max-width:767px) {
+  .main-screen {
+    width: 100%;
+  }
+
+  .main-screen__town {
+    font-size: 28px;
+    line-height: 28px;
+    padding-bottom: 8px;
+  }
+
+  .main-screen__name {
+    font-size: 82px;
+    line-height: 78px;
   }
 }
 
@@ -529,6 +579,12 @@ input[type=radio].visually-hidden {
     flex-direction: column;
   }
 
+  .gym {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .gym__info {
     width: 74%;
     margin: 0 auto;
@@ -555,6 +611,7 @@ input[type=radio].visually-hidden {
 
   .gym__video {
     width: 100%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,6 +620,7 @@ input[type=radio].visually-hidden {
     justify-content: center;
     background-image: url("../img/gym-tablet.jpg");
     background-size: contain;
+    background-position: center top;
   }
 }
 
@@ -570,6 +628,7 @@ input[type=radio].visually-hidden {
   .gym__video {
     background-image: url("../img/gym-tablet@2x.jpg");
     background-size: contain;
+    background-position: center top;
   }
 }
 
@@ -582,8 +641,8 @@ input[type=radio].visually-hidden {
   .gym__video-play {
     width: 73px;
     height: 73px;
-    bottom: 46px;
-    left: 301px;
+    bottom: 11.5%;
+    left: 44.5%;
   }
 
   .gym__video-play img {

@@ -44,3 +44,9 @@
     width: 187px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .button--subscription-buy {
+    width: 100%;
+  }
+}
