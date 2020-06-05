@@ -75,7 +75,6 @@
 @media (max-width: $tablet-width) {
   .gym {
     flex-direction: column;
-    justify-content: center;
   }
 
   .gym__info {
@@ -129,5 +128,41 @@
 
   .gym__video-play img {
     padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .gym {
+    margin-top: 11px;
+  }
+
+  .gym__info {
+    width: 100%;
+    margin: 0;
+    align-items: flex-start;
+    padding-bottom: 37px;
+  }
+
+  .gym__info h3 {
+    padding-bottom: 29px;
+  }
+
+  .gym__info p {
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  .gym__video {
+    width: 100%;
+    margin: 0;
+    background-image: url("../../img/gym-mobile.jpg");
+    background-size: contain;
+    background-position: center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/gym-mobile@2x.jpg");
+      background-size: contain;
+      background-position: center top;
+    }
   }
 }

@@ -394,14 +394,24 @@ input[type=radio].visually-hidden {
 
   .container--main-screen {
     background-image: none;
+    padding-bottom: 0;
   }
 
   .container--header-center {
     margin-bottom: 47px;
   }
 
-  .container--main-screen {
-    padding-bottom: 0;
+  .container--gym {
+    width: 91%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 67px auto;
+  }
+
+  .container--gym h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -579,12 +589,6 @@ input[type=radio].visually-hidden {
     flex-direction: column;
   }
 
-  .gym {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
   .gym__info {
     width: 74%;
     margin: 0 auto;
@@ -647,6 +651,46 @@ input[type=radio].visually-hidden {
 
   .gym__video-play img {
     padding: 0;
+  }
+}
+
+@media (max-width:767px) {
+  .gym {
+    margin-top: 11px;
+  }
+
+  .gym__info {
+    width: 100%;
+    margin: 0;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-bottom: 37px;
+  }
+
+  .gym__info h3 {
+    padding-bottom: 29px;
+  }
+
+  .gym__info p {
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  .gym__video {
+    width: 100%;
+    margin: 0;
+    background-image: url("../img/gym-mobile.jpg");
+    background-size: contain;
+    background-position: center top;
+  }
+}
+
+@media (max-width:767px) and (-webkit-min-device-pixel-ratio:1.5),(max-width:767px) and (min-resolution:144dpi),(max-width:767px) and (min-resolution:1.5dppx) {
+  .gym__video {
+    background-image: url("../img/gym-mobile@2x.jpg");
+    background-size: contain;
+    background-position: center top;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

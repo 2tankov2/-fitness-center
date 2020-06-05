@@ -100,13 +100,21 @@
 
   .container--main-screen {
     background-image: none;
+    padding-bottom: 0;
   }
 
   .container--header-center {
     margin-bottom: 47px;
   }
 
-  .container--main-screen {
-    padding-bottom: 0;
+  .container--gym {
+    width: 91%;
+    align-items: flex-start;
+    margin: 67px auto;
+  }
+
+  .container--gym h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
