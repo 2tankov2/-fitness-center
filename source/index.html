@@ -14,16 +14,16 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="wrapper">
-      <div class="container container--header-links">
+    <div class="container container--page-header">
+      <div class="page-header__header-links">
         <a href="#">supergym</a>
         <a href="tel:+78005555555">8-800-555-55-55</a>
       </div>
-      <div class="container container--main-screen">
+      <div class="page-header__main-screen">
         <div class="main-screen">
           <p class="main-screen__town">Омск</p>
           <p class="main-screen__name">Фитнес</p>
-          <div class="container container--header-center">
+          <div class="main-screen__services-list">
             <ul class="services-list">
               <li>Тренажёрный зал</li>
               <li>Групповые занятия</li>
@@ -41,27 +41,31 @@
       </div>
     </div>
   </header>
+
   <main>
     <div class="container container--gym">
-      <h2>Тренажерный зал</h2>
-      <div class="gym">
-        <div class="gym__info">
-          <h3>Просторный зал площадью 900 кв/м</h3>
-          <p>Supergym – самый большой фитнес центр&nbsp;за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      <section class="gym">
+        <h2>Тренажерный зал</h2>
+        <div class="gym__container">
+          <div class="gym__info">
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр&nbsp;за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="gym__video">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/fitgym-video-mobile.jpg 1x, img/fitgym-video-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/fitgym-video-tablet.jpg 1x, img/fitgym-video-tablet@2x.jpg 2x">
+              <img src="img/fitgym-video-desktop.jpg" srcset="img/fitgym-video-desktop@2x.jpg 2x" alt="Видео-обзор тренажерного зала">
+            </picture>
+            <button class="gym__video-play" type="button">
+              <img src="img/icon-play.svg" alt="Запуск видео">
+            </button>
+          </div>
         </div>
-        <div class="gym__video">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/fitgym-video-mobile.jpg 1x, img/fitgym-video-mobile@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="img/fitgym-video-tablet.jpg 1x, img/fitgym-video-tablet@2x.jpg 2x">
-            <img src="img/fitgym-video-desktop.jpg" srcset="img/fitgym-video-desktop@2x.jpg 2x" alt="Видео-обзор тренажерного зала">
-          </picture>
-          <button class="gym__video-play" type="button">
-            <img src="img/icon-play.svg" alt="Запуск видео">
-          </button>
-        </div>
-      </div>
+      </section>
     </div>
+
     <div class="wrapper wrapper--subscription">
       <div class="container container--subscription">
         <section class="subscription">
@@ -138,44 +142,46 @@
             </li>
           </ul>
         </section>
-        <div class="container container--promo">
-          <section class="promo">
-            <div class="promo__info">
-              <div class="info">
-                <table>
-                  <tr>
-                    <td rowspan="7" class="topic">Super games</td>
-                    <td colspan="2">Дата</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">7</td>
-                    <td>Марта</td>
-                  </tr>
-                  <tr>
-                    <td>2019</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">Время</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2">12:00</td>
-                  </tr>
-                </table>
-                <p>Ежегодные соревнования по Crossfit</p>
-                <a class="button button--promo">Заполнить заявку</a>
-              </div>
-            </div>
-            <div class="promo__photo">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/promomen-mobile.jpg 1x, img/promomen-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/promomen-tablet.jpg 1x, img/promomen-tablet@2x.jpg 2x">
-                <img src="img/promomen-desktop.jpg" srcset="img/promomen-desktop@2x.jpg 2x" alt="Парень отжимается">
-              </picture>
-            </div>
-          </section>
-        </div>
       </div>
     </div>
+
+    <div class="container container--promo">
+      <section class="promo">
+        <div class="promo__info">
+          <div class="info">
+            <table>
+              <tr>
+                <td rowspan="7" class="topic">Super games</td>
+                <td colspan="2">Дата</td>
+              </tr>
+              <tr>
+                <td rowspan="2">7</td>
+                <td>Марта</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+              </tr>
+              <tr>
+                <td colspan="2">Время</td>
+              </tr>
+              <tr>
+                <td rowspan="2">12:00</td>
+              </tr>
+            </table>
+            <p>Ежегодные соревнования по Crossfit</p>
+            <a class="button button--promo">Заполнить заявку</a>
+          </div>
+        </div>
+        <div class="promo__photo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/promomen-mobile.jpg 1x, img/promomen-mobile@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/promomen-tablet.jpg 1x, img/promomen-tablet@2x.jpg 2x">
+            <img src="img/promomen-desktop.jpg" srcset="img/promomen-desktop@2x.jpg 2x" alt="Парень отжимается">
+          </picture>
+        </div>
+      </section>
+    </div>
+
   </main>
   <footer></footer>
 </body>

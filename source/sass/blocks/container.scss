@@ -1,121 +1,46 @@
 .container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
 }
 
-.container--header-links a {
-  font-family: "bebas_neue", "Arial", cursive;
-  font-size: 26px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.container--main-screen {
-  background-image: url("../../img/men-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: 70% 50%;
-  background-size: contain;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/men-desktop@2x.jpg");
-    background-size: 500px auto;
-  }
-}
-
-.container--header-center {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  margin-bottom: 62px;
-  align-items: center;
+.container--page-header {
+  padding-top: 31px;
+  padding-bottom: 50px;
 }
 
 .container--gym {
   width: 76%;
-  margin: 0 auto;
-  flex-direction: column;
   margin-top: 166px;
   margin-bottom: 128px;
 }
 
-.container--gym h2 {
-  text-transform: uppercase;
-  font-family: "bebas_neue", "Arial", cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  margin: 0;
-
-  color: #102654;
-}
-
 @media (max-width: $tablet-width) {
-  .container--header-links {
-    margin-bottom: 20px;
+  .container {
+    width: 88.3%;
   }
 
-  .container--header-links a {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-  }
-
-  .container--main-screen {
-    padding-bottom: 24px;
-    background-image: url("../../img/men-tablet.jpg");
-    background-position: 100% top;
-    background-size: 324px auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/men-tablet@2x.jpg");
-      background-size: 324px auto;
-    }
-  }
-
-  .container--header-center {
-    margin-bottom: 45px;
+  .container--page-header {
+    padding-top: 38px;
+    padding-bottom: 81px;
   }
 
   .container--gym {
-    width: 88.3%;
-    align-items: center;
     margin: 97px auto;
-  }
-
-  .container--gym h2 {
-    font-size: 42px;
-    line-height: 42px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .container--header-links a {
-    font-size: 20px;
-    line-height: 20px;
+  .container {
+    width: 91%;
   }
 
-  .container--main-screen {
-    background-image: none;
-    padding-bottom: 0;
-  }
-
-  .container--header-center {
-    margin-bottom: 47px;
+  .container--page-header {
+    padding-top: 18px;
+    padding-bottom: 79px;
   }
 
   .container--gym {
     width: 100%;
-    align-items: flex-start;
     margin-top: 67px;
-  }
-
-  .container--gym h2 {
-    padding-left: 5%;
-    font-size: 32px;
-    line-height: 32px;
   }
 }
