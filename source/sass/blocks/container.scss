@@ -108,12 +108,13 @@
   }
 
   .container--gym {
-    width: 91%;
+    width: 100%;
     align-items: flex-start;
-    margin: 67px auto;
+    margin-top: 67px;
   }
 
   .container--gym h2 {
+    padding-left: 5%;
     font-size: 32px;
     line-height: 32px;
   }

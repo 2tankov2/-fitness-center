@@ -402,14 +402,15 @@ input[type=radio].visually-hidden {
   }
 
   .container--gym {
-    width: 91%;
+    width: 100%;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin: 67px auto;
+    margin-top: 67px;
   }
 
   .container--gym h2 {
+    padding-left: 5%;
     font-size: 32px;
     line-height: 32px;
   }
@@ -656,16 +657,17 @@ input[type=radio].visually-hidden {
 
 @media (max-width:767px) {
   .gym {
+    width: 100%;
     margin-top: 11px;
   }
 
   .gym__info {
-    width: 100%;
-    margin: 0;
+    width: 91%;
+    margin: 0 auto;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding-bottom: 37px;
+    padding-bottom: 26px;
   }
 
   .gym__info h3 {
@@ -691,6 +693,21 @@ input[type=radio].visually-hidden {
     background-image: url("../img/gym-mobile@2x.jpg");
     background-size: contain;
     background-position: center top;
+  }
+}
+
+@media (max-width:767px) {
+  .gym__video img {
+    padding-top: 353px;
+  }
+
+  .gym__video-play {
+    bottom: 9.6%;
+    left: 39%;
+  }
+
+  .gym__video-play img {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
