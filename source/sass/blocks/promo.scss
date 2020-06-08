@@ -14,3 +14,13 @@
 .promo__photo {
   height: 500px;
 }
+
+@media (max-width: $tablet-width) {
+  .promo__info {
+    padding-top: 47px;
+  }
+
+  .promo__photo {
+    height: 292px;
+  }
+}

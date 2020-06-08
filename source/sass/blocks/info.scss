@@ -85,3 +85,34 @@
   font-size: 18px;
   line-height: 128%;
 }
+
+@media (max-width: $tablet-width) {
+  .info__topic {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .info__name {
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+
+  .info__date,
+  .info__time {
+    font-size: 24px;
+  }
+
+  .info__month,
+  .info__year {
+    font-size: 10px;
+  }
+
+  .info__section {
+    padding-bottom: 5px;
+  }
+
+  .info__text {
+    font-size: 12px;
+    padding-bottom: 30px;
+  }
+}
