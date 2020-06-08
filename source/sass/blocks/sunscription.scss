@@ -31,3 +31,15 @@
     margin-bottom: 45px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .subscription h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 23px;
+  }
+
+  .subscription__months {
+    margin-bottom: 35px;
+  }
+}
