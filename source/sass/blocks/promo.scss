@@ -1,6 +1,7 @@
 .promo {
   width: 100%;
   display: flex;
+  margin: 0 auto;
 }
 
 .promo__info {
@@ -9,11 +10,18 @@
 
   background-color: #ed0233;
   color: #ffffff;
+  flex-grow: 1;
 }
 
 .promo__photo {
-  height: 500px;
+  flex-grow: 1;
 }
+
+.promo__photo img {
+  object-fit: cover;
+  height: 100%;
+}
+
 
 @media (max-width: $tablet-width) {
   .promo__info {
@@ -21,6 +29,21 @@
   }
 
   .promo__photo {
-    height: 292px;
+    max-height: 292px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo {
+    flex-direction: column;
+  }
+
+  .promo__info,
+  .promo__photo {
+    width: 100%;
+  }
+
+  .promo__photo img {
+    width: 100%;
   }
 }
