@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/bebasneue_regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link ref="preload" href="fonts/bebasneue_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/bebasneue_bold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
   <header class="page-header">
@@ -149,26 +149,22 @@
       <section class="promo">
         <div class="promo__info">
           <div class="info">
-            <table>
-              <tr>
-                <td rowspan="7" class="info__topic">Super games</td>
-                <td colspan="2" class="info__name">Дата</td>
-              </tr>
-              <tr>
-                <td rowspan="2" class="info__date">7</td>
-                <td class="info__month">Марта</td>
-              </tr>
-              <tr>
-                <td class="info__year">2019</td>
-              </tr>
-              <tr>
-                <td colspan="2" class="info__name">Время</td>
-              </tr>
-              <tr>
-                <td rowspan="2" class="info__time">12:00</td>
-              </tr>
-            </table>
-            <p>Ежегодные соревнования по CrossFit</p>
+            <div class="info__section">
+              <h2 class="info__topic">Super games</h2>
+              <div class="info__container">
+                <p class="info__name">Дата</p>
+                <div class="info__section">
+                  <p class="info__date">7</p>
+                  <div class="info__container">
+                  <p class="info__month">Марта</p>
+                  <p class="info__year">2019</p>
+                  </div>
+                </div>
+                <p class="info__name">Время</p>
+                <p class="info__time">12:00</p>
+              </div>
+            </div>
+            <p class="info__text">Ежегодные соревнования по CrossFit</p>
             <a class="button button--promo">Заполнить заявку</a>
           </div>
         </div>

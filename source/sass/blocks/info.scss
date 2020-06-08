@@ -5,6 +5,23 @@
   flex-direction: column;
 }
 
+.info__section {
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__container p {
+  margin: 0;
+  line-height: 130%;
+}
+
 .info__topic {
   font-family: "bebas_neue", "Ariel", cursive;
   font-weight: bold;
@@ -12,29 +29,57 @@
   line-height: 90px;
   letter-spacing: 0.03em;
   padding-right: 20px;
+  margin: 0;
 }
 
 .info__name {
   font-size: 18px;
-  line-height: 150%;
+  padding-bottom: 5px;
+}
+
+.info__date {
+  position: relative;
+  align-self: center;
+  padding-right: 5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 250%;
+    height: 1px;
+    background-color: #ffffff;
+    top: 1px;
+    left: 0;
+  }
+}
+
+.info__time {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: #ffffff;
+    top: 1px;
+    left: 0;
+  }
 }
 
 .info__date,
 .info__time {
   font-weight: bold;
   font-size: 40px;
-  line-height: 150%;
 }
 
 .info__month,
 .info__year {
   font-size: 14px;
-  line-height: 150%;
 }
 
-.info p {
+.info__text {
   margin: 0;
-  padding-top: 10px;
   padding-bottom: 49px;
 
   font-size: 18px;
