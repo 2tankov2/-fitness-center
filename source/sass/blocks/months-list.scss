@@ -1,0 +1,30 @@
+.months-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.months-list__item {
+  position: relative;
+  padding-right: 46px;
+
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+  color: rgba(16, 38, 84, 0.5);
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.months-list__item a {
+  padding-bottom: 13px;
+}
+
+.months-list__link--active {
+  border-bottom: 2px solid #d10a42;
+}

@@ -39,6 +39,15 @@
   }
 }
 
+.button--buy {
+  width: 206px;
+  border: 2px solid #102654;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  color: #102654;
+  margin-bottom: 56px;
+}
+
 @media (max-width: $tablet-width) {
   .button--subscription-buy {
     width: 187px;

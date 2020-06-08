@@ -1,0 +1,21 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription h2 {
+  text-transform: uppercase;
+  font-family: "bebas_neue", "Arial", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 37px;
+
+  color: #102654;
+}
+
+.subscription__months {
+  margin-bottom: 39px;
+}
