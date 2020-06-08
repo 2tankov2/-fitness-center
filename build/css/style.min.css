@@ -221,6 +221,12 @@ input[type=radio].visually-hidden {
   margin-bottom: 56px;
 }
 
+.button--promo {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 @media (max-width:1199px) {
   .button--subscription-buy {
     width: 187px;
@@ -363,7 +369,11 @@ input[type=radio].visually-hidden {
 
 .container--subscription {
   padding-top: 116px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
+}
+
+.container--promo {
+  padding-top: 120px;
 }
 
 @media (max-width:1199px) {
@@ -1041,6 +1051,8 @@ input[type=radio].visually-hidden {
   .catalog-item:focus,
   .catalog-item:hover {
     min-height: 384px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     border-image-source: url("../img/border-mobile.png");
   }
 
@@ -1063,5 +1075,66 @@ input[type=radio].visually-hidden {
   .catalog-item__price span {
     font-size: 45px;
   }
+}
+
+.promo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__info {
+  width: 43.1%;
+  padding-top: 77px;
+  background-color: #ed0233;
+  color: #fff;
+}
+
+.info {
+  width: 69%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.info__topic {
+  font-family: "bebas_neue","Ariel",cursive;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: .03em;
+  padding-right: 20px;
+}
+
+.info p,
+.info__name {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.info__date,
+.info__time {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.info__month,
+.info__year {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.info p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 49px;
+  line-height: 128%;
 }
 /*# sourceMappingURL=style.min.css.map */

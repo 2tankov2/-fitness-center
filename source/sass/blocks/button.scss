@@ -48,6 +48,12 @@
   margin-bottom: 56px;
 }
 
+.button--promo {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 @media (max-width: $tablet-width) {
   .button--subscription-buy {
     width: 187px;

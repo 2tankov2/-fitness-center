@@ -1,0 +1,42 @@
+.info {
+  width: 69%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.info__topic {
+  font-family: "bebas_neue", "Ariel", cursive;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  padding-right: 20px;
+}
+
+.info__name {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.info__date,
+.info__time {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.info__month,
+.info__year {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.info p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 49px;
+
+  font-size: 18px;
+  line-height: 128%;
+}

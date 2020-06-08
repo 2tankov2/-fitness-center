@@ -16,7 +16,11 @@
 
 .container--subscription {
   padding-top: 116px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
+}
+
+.container--promo {
+  padding-top: 120px;
 }
 
 @media (max-width: $tablet-width) {
