@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fitness-center</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/robotocondensed-light.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/bebasneue_regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link ref="preload" href="fonts/bebasneue_bold.woff2" as="font" type="font/woff2" crossorigin="">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container container--page-header">
+      <div class="page-header__header-links">
+        <a href="#">supergym</a>
+        <a href="tel:+78005555555">8-800-555-55-55</a>
+      </div>
+      <div class="page-header__main-screen">
+        <div class="main-screen">
+          <p class="main-screen__town">Омск</p>
+          <p class="main-screen__name">Фитнес</p>
+          <div class="main-screen__services-list">
+            <ul class="services-list">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <p class="main-screen__name">Центр</p>
+          </div>
+          <a class="button button--subscription-buy" href="#subscription">Купить абонемент</a>
+        </div>
+        <ul class="page-header__social">
+          <li class="page-header__social-item"><a href="#">fb</a></li>
+          <li class="page-header__social-item"><a href="#">vk</a></li>
+          <li class="page-header__social-item"><a href="#">ig</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container container--gym">
+      <section class="gym">
+        <h2>Тренажерный зал</h2>
+        <div class="gym__container">
+          <div class="gym__info">
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр&nbsp;за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="gym__video">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/fitgym-video-mobile.jpg 1x, img/fitgym-video-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/fitgym-video-tablet.jpg 1x, img/fitgym-video-tablet@2x.jpg 2x">
+              <img src="img/fitgym-video-desktop.jpg" srcset="img/fitgym-video-desktop@2x.jpg 2x" alt="Видео-обзор тренажерного зала">
+            </picture>
+            <button class="gym__video-play" type="button">
+              <img src="img/icon-play.svg" alt="Запуск видео">
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="wrapper wrapper--subscription">
+      <div class="container container--subscription">
+        <section class="subscription" id="subscription">
+          <h2>Абонементы</h2>
+          <ul class="subscription__months months-list">
+            <li class="months-list__item months-one months-list__item--active">
+              <a href="#">1 месяц</a>
+            </li>
+            <li class="months-list__item months-six">
+              <a href="#">6 месяцев</a>
+            </li>
+            <li class="months-list__item months-twelve">
+              <a href="#">12 месяцев</a>
+            </li>
+          </ul>
+          <ul class="subscription__catalog catalog catalog--month-one">
+            <li class="catalog-item">
+              <h3>С тренером</h3>
+              <p class="catalog-item__time">12 занятий</p>
+              <p class="catalog-item__price" data-price="5000">5000<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="catalog-item">
+              <h3>Дневной</h3>
+              <p class="catalog-item__time">с 8:00 до 17:00</p>
+              <p class="catalog-item__price" data-price="1700">1700<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="catalog-item">
+              <h3>Полный день</h3>
+              <p class="catalog-item__time">с 8:00 до 22:00</p>
+              <p class="catalog-item__price" data-price="2700">2700<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="subscription__catalog catalog catalog--month-six catalog--closed">
+            <li class="catalog-item">
+              <h3>С тренером</h3>
+              <p class="catalog-item__time">12 занятий</p>
+              <p class="catalog-item__price" data-price="5000">5000<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="catalog-item">
+              <h3>Дневной</h3>
+              <p class="catalog-item__time">с 8:00 до 17:00</p>
+              <p class="catalog-item__price" data-price="1700">1700<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="catalog-item">
+              <h3>Полный день</h3>
+              <p class="catalog-item__time">с 8:00 до 22:00</p>
+              <p class="catalog-item__price" data-price="2700">2700<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="subscription__catalog catalog catalog--month-twelve catalog--closed">
+            <li class="catalog-item">
+              <h3>С тренером</h3>
+              <p class="catalog-item__time">12 занятий</p>
+              <p class="catalog-item__price" data-price="5000">5000<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="catalog-item">
+              <h3>Дневной</h3>
+              <p class="catalog-item__time">с 8:00 до 17:00</p>
+              <p class="catalog-item__price" data-price="1700">1700<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="catalog-item">
+              <h3>Полный день</h3>
+              <p class="catalog-item__time">с 8:00 до 22:00</p>
+              <p class="catalog-item__price" data-price="2700">2700<span> &#8381;</span></p>
+              <a class="button button--buy catalog__button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <div class="container container--promo">
+      <section class="promo">
+        <div class="promo__info">
+          <div class="info">
+            <table>
+              <tr>
+                <td rowspan="7" class="topic">Super games</td>
+                <td colspan="2">Дата</td>
+              </tr>
+              <tr>
+                <td rowspan="2">7</td>
+                <td>Марта</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+              </tr>
+              <tr>
+                <td colspan="2">Время</td>
+              </tr>
+              <tr>
+                <td rowspan="2">12:00</td>
+              </tr>
+            </table>
+            <p>Ежегодные соревнования по Crossfit</p>
+            <a class="button button--promo">Заполнить заявку</a>
+          </div>
+        </div>
+        <div class="promo__photo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/promomen-mobile.jpg 1x, img/promomen-mobile@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/promomen-tablet.jpg 1x, img/promomen-tablet@2x.jpg 2x">
+            <img src="img/promomen-desktop.jpg" srcset="img/promomen-desktop@2x.jpg 2x" alt="Парень отжимается">
+          </picture>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer></footer>
+</body>
+</html>
