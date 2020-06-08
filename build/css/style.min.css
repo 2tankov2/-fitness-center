@@ -248,7 +248,8 @@ input[type=radio].visually-hidden {
 }
 
 .page-header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
+  background-image: url("../img/colorful-desktop.png");
+  background-size: cover;
   background-color: #b80027;
   color: #fff;
 }
@@ -308,6 +309,11 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:1199px) {
+  .page-header {
+    background-image: url("../img/colorful-tablet.png");
+    background-size: cover;
+  }
+
   .page-header__header-links {
     margin-bottom: 20px;
   }
@@ -340,6 +346,11 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:767px) {
+  .page-header {
+    background-image: url("../img/colorful-mobile.png");
+    background-size: cover;
+  }
+
   .page-header__header-links a {
     font-size: 20px;
     line-height: 20px;
@@ -966,6 +977,15 @@ input[type=radio].visually-hidden {
   border: transparent;
 }
 
+.catalog-item::before {
+  position: absolute;
+  content: attr(data-price);
+  color: transparent;
+  text-shadow: 0 187px 0 rgba(232,232,232,.47);
+  font-size: 100px;
+  font-weight: 700;
+}
+
 .catalog-item h3 {
   font-weight: 700;
   font-size: 26px;
@@ -990,14 +1010,6 @@ input[type=radio].visually-hidden {
   color: #103aae;
   margin: 0;
   padding-bottom: 35px;
-}
-
-.catalog-item__price::before {
-  position: absolute;
-  content: attr(data-price);
-  color: transparent;
-  text-shadow: -17px -25px 0 rgba(232,232,232,.47);
-  font-size: 100px;
 }
 
 .catalog-item__price span {

@@ -42,6 +42,15 @@
       border: transparent;
     }
   }
+
+  &::before {
+    position: absolute;
+    content: attr(data-price);
+    color: transparent;
+    text-shadow: 0 187px 0 rgba(232, 232, 232, 0.47);
+    font-size: 100px;
+    font-weight: bold;
+  }
 }
 
 .catalog-item h3 {
@@ -72,13 +81,7 @@
   margin: 0;
   padding-bottom: 35px;
 
-  &::before {
-    position: absolute;
-    content: attr(data-price);
-    color: transparent;
-    text-shadow: -17px -25px 0 rgba(232, 232, 232, 0.47);
-    font-size: 100px;
-  }
+
 }
 
 .catalog-item__price span {
