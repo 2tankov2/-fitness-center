@@ -19,3 +19,15 @@
 .subscription__months {
   margin-bottom: 39px;
 }
+
+@media (max-width: $tablet-width) {
+  .subscription h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .subscription__months {
+    margin-bottom: 45px;
+  }
+}

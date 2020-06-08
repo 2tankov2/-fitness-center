@@ -14,7 +14,6 @@
   font-size: 20px;
   line-height: 150%;
   /* or 30px */
-  color: rgba(16, 38, 84, 0.5);
 
   &:last-child {
     padding-right: 0;
@@ -22,9 +21,18 @@
 }
 
 .months-list__item a {
+  color: rgba(16, 38, 84, 0.5);
   padding-bottom: 13px;
 }
 
-.months-list__link--active {
+.months-list__item--active a {
   border-bottom: 2px solid #d10a42;
+  color: #102654;
+}
+
+@media (max-width: $tablet-width) {
+  .months-list__item {
+    font-size: 18px;
+    padding-right: 55px;
+  }
 }

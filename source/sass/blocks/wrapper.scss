@@ -16,9 +16,8 @@
 @media (max-width: $tablet-width) {
   .wrapper--subscription::after {
     content: url("../../img/pancakes-tablet.png");
-    bottom: -50px;
+    bottom: -128px;
     right: 0;
-    z-index: 20;
   }
 }
 

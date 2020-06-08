@@ -225,6 +225,10 @@ input[type=radio].visually-hidden {
   .button--subscription-buy {
     width: 187px;
   }
+
+  .button--buy {
+    padding-bottom: 24px;
+  }
 }
 
 @media (max-width:767px) {
@@ -371,6 +375,11 @@ input[type=radio].visually-hidden {
   .container--gym {
     margin: 97px auto;
   }
+
+  .container--subscription {
+    padding-top: 98px;
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width:767px) {
@@ -408,9 +417,8 @@ input[type=radio].visually-hidden {
 @media (max-width:1199px) {
   .wrapper--subscription::after {
     content: url("../img/pancakes-tablet.png");
-    bottom: -50px;
+    bottom: -128px;
     right: 0;
-    z-index: 20;
   }
 }
 
@@ -807,6 +815,18 @@ input[type=radio].visually-hidden {
   margin-bottom: 39px;
 }
 
+@media (max-width:1199px) {
+  .subscription h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .subscription__months {
+    margin-bottom: 45px;
+  }
+}
+
 .months-list {
   list-style: none;
   margin-top: 0;
@@ -822,7 +842,6 @@ input[type=radio].visually-hidden {
   padding-right: 46px;
   font-size: 20px;
   line-height: 150%;
-  color: rgba(16,38,84,.5);
 }
 
 .months-list__item:last-child {
@@ -830,11 +849,20 @@ input[type=radio].visually-hidden {
 }
 
 .months-list__item a {
+  color: rgba(16,38,84,.5);
   padding-bottom: 13px;
 }
 
-.months-list__link--active {
+.months-list__item--active a {
   border-bottom: 2px solid #d10a42;
+  color: #102654;
+}
+
+@media (max-width:1199px) {
+  .months-list__item {
+    font-size: 18px;
+    padding-right: 55px;
+  }
 }
 
 .catalog {
@@ -870,6 +898,7 @@ input[type=radio].visually-hidden {
   margin-right: 3.5%;
   background-color: #fff;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .catalog-item:nth-child(3n) {
@@ -885,7 +914,7 @@ input[type=radio].visually-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-image-slice: 10;
-  border-image-source: url("../img/border.png");
+  border-image-source: url("../img/border-desktop.png");
 }
 
 .catalog-item:focus .catalog__button,
@@ -933,5 +962,42 @@ input[type=radio].visually-hidden {
   color: #000;
   font-weight: 400;
   font-size: 57px;
+}
+
+@media (max-width:1199px) {
+  .catalog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .catalog-item {
+    width: 62%;
+    margin: 0 auto 40px;
+  }
+
+  .catalog-item:nth-child(3n) {
+    margin: 0 auto;
+  }
+
+  .catalog-item:focus,
+  .catalog-item:hover {
+    width: 65%;
+    min-height: 448px;
+    border-image-source: url("../img/border-tablet.png");
+  }
+
+  .catalog-item h3 {
+    line-height: 29px;
+    padding-bottom: 15px;
+  }
+
+  .catalog-item__price {
+    padding-bottom: 36px;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
