@@ -415,6 +415,15 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
 }
 
+.container h2 {
+  font-family: "bebas_neue","Arial",cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: .03em;
+  margin: 0;
+  color: #102654;
+}
+
 .container--page-header {
   padding-top: 31px;
   padding-bottom: 50px;
@@ -437,12 +446,23 @@ input[type=radio].visually-hidden {
 }
 
 .container--trainers {
-  padding-bottom: 60px;
+  padding-bottom: 120px;
+}
+
+.container--advantages {
+  width: 74%;
+  padding-top: 115px;
+  padding-bottom: 115px;
 }
 
 @media (max-width:1199px) {
   .container {
     width: 88.3%;
+  }
+
+  .container h2 {
+    font-size: 42px;
+    line-height: 42px;
   }
 
   .container--page-header {
@@ -468,6 +488,11 @@ input[type=radio].visually-hidden {
 @media (max-width:767px) {
   .container {
     width: 91%;
+  }
+
+  .container h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .container--page-header {
@@ -538,8 +563,11 @@ input[type=radio].visually-hidden {
 
 .gym h2,
 .main-screen p {
-  font-family: "bebas_neue","Arial",cursive;
   text-transform: uppercase;
+  font-family: "bebas_neue","Arial",cursive;
+}
+
+.main-screen p {
   margin: 0;
 }
 
@@ -648,9 +676,6 @@ input[type=radio].visually-hidden {
 }
 
 .gym h2 {
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: .03em;
   color: #102654;
 }
 
@@ -735,11 +760,6 @@ input[type=radio].visually-hidden {
     align-items: center;
   }
 
-  .gym h2 {
-    font-size: 42px;
-    line-height: 42px;
-  }
-
   .gym__container,
   .gym__info {
     -webkit-box-orient: vertical;
@@ -822,8 +842,6 @@ input[type=radio].visually-hidden {
 
   .gym h2 {
     padding-left: 5%;
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .gym__container {
@@ -896,11 +914,7 @@ input[type=radio].visually-hidden {
 
 .subscription h2 {
   text-transform: uppercase;
-  font-family: "bebas_neue","Arial",cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: .03em;
-  margin: 0 0 37px;
+  margin-bottom: 37px;
   color: #102654;
 }
 
@@ -910,8 +924,6 @@ input[type=radio].visually-hidden {
 
 @media (max-width:1199px) {
   .subscription h2 {
-    font-size: 42px;
-    line-height: 42px;
     margin-bottom: 30px;
   }
 
@@ -922,8 +934,6 @@ input[type=radio].visually-hidden {
 
 @media (max-width:767px) {
   .subscription h2 {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 23px;
   }
 
@@ -1239,6 +1249,15 @@ input[type=radio].visually-hidden {
   padding-bottom: 14px;
 }
 
+.info__section h2 {
+  font-family: "bebas_neue","Ariel",cursive;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  padding-right: 20px;
+  color: #fff;
+}
+
 .info__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1252,16 +1271,6 @@ input[type=radio].visually-hidden {
 .info__container p {
   margin: 0;
   line-height: 130%;
-}
-
-.info__topic {
-  font-family: "bebas_neue","Ariel",cursive;
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 90px;
-  letter-spacing: .03em;
-  padding-right: 20px;
-  margin: 0;
 }
 
 .info__name {
@@ -1314,7 +1323,7 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:1199px) {
-  .info__topic {
+  .info__section h2 {
     font-size: 52px;
     line-height: 52px;
   }
@@ -1355,19 +1364,11 @@ input[type=radio].visually-hidden {
 }
 
 .trainers h2 {
-  font-family: "bebas_neue","Arial",cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: .03em;
-  color: #102654;
-  margin: 0;
   padding-bottom: 55px;
 }
 
 @media (max-width:1199px) {
   .trainers h2 {
-    font-size: 42px;
-    line-height: 42px;
     text-align: center;
     padding-bottom: 42px;
   }
@@ -1375,8 +1376,6 @@ input[type=radio].visually-hidden {
 
 @media (max-width:767px) {
   .trainers h2 {
-    font-size: 32px;
-    line-height: 32px;
     padding-bottom: 44px;
   }
 }
@@ -1519,17 +1518,22 @@ input[type=radio].visually-hidden {
   padding-top: 53px;
 }
 
-.actions-info h3,
-.actions-info p {
+.actions-info h3 {
   margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
 }
 
+.actions-info p,
+.advantages__center p {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
 .actions-info p {
   font-weight: 400;
-  font-size: 16px;
   padding-bottom: 35px;
 }
 
@@ -1560,5 +1564,141 @@ input[type=radio].visually-hidden {
   .skills-list {
     padding-left: 50px;
   }
+}
+
+.advantages,
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages h2 {
+  padding-bottom: 72px;
+}
+
+.advantages__wrapper {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.advantages-list,
+.advantages__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.advantages__center {
+  width: 240px;
+  background: #1c3374;
+  color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages__center h2 {
+  color: #fff;
+  font-family: "Roboto Condensed","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74px;
+  padding-top: 63px;
+  padding-bottom: 28px;
+}
+
+.advantages__center h3 {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+}
+
+.advantages__center p {
+  line-height: 150%;
+  padding: 44px 25px 20px;
+}
+
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list--left {
+  width: 326px;
+  margin-right: 4.6%;
+}
+
+.advantages-list--right {
+  width: 337px;
+  margin-left: 5.7%;
+}
+
+.advantages-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 158px;
+}
+
+.advantages-list__item:nth-child(2n) {
+  margin-bottom: 0;
+}
+
+.advantages-list__item-amount {
+  padding-right: 8.8%;
+}
+
+.advantages-list__item-amount p {
+  margin: -5px 0 0;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 73px;
+  line-height: 58px;
+  background: linear-gradient(111.72deg,#ed0233 17.6%,#003eb7 95.31%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages-list__item-amount small {
+  font-size: 14px;
+  color: #2e35ac;
+}
+
+.advantages-list__item-info h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 20px;
+  color: #102654;
+  padding-bottom: 11px;
+}
+
+.advantages-list__item-info p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #102654;
 }
 /*# sourceMappingURL=style.min.css.map */
