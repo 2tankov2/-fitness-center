@@ -35,7 +35,13 @@
 }
 
 .container--trainers {
-  padding-bottom: 60px;
+  padding-bottom: 120px;
+}
+
+.container--advantages {
+  width: 74%;
+  padding-top: 115px;
+  padding-bottom: 115px;
 }
 
 @media (max-width: $tablet-width) {
