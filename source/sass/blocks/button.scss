@@ -54,6 +54,32 @@
   padding-bottom: 24px;
 }
 
+.button--back {
+  position: absolute;
+  left: -51px;
+  bottom: 135px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  transform: rotate(45deg);
+}
+
+.button--next {
+  position: absolute;
+  right: -51px;
+  bottom: 135px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  transform: rotate(-45deg);
+}
+
 @media (max-width: $tablet-width) {
   .button--subscription-buy {
     width: 187px;
