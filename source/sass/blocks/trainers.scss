@@ -21,3 +21,11 @@
     padding-bottom: 42px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 44px;
+  }
+}

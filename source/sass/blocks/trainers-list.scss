@@ -90,4 +90,28 @@
       display: none;
     }
   }
+
+  .trainers-list__profile-image img {
+    width: 268px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .trainers-list__item {
+    width: 226px;
+    margin: 0 auto;
+
+    &:nth-child(n+2) {
+      display: none;
+    }
+  }
+
+  .trainers-list__profile {
+    height: 274px;
+  }
+
+  .trainers-list__profile-image img {
+    width: 226px;
+    height: 274px;
+  }
 }

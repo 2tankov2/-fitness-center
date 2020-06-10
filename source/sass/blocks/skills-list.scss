@@ -16,3 +16,9 @@
     padding-right: 10px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .skills-list {
+    padding-left: 50px;
+  }
+}

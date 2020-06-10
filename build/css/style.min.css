@@ -286,6 +286,13 @@ input[type=radio].visually-hidden {
   .button--buy {
     margin-bottom: 44px;
   }
+
+  .button--back,
+  .button--next {
+    bottom: 130px;
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .page-header {
@@ -481,6 +488,7 @@ input[type=radio].visually-hidden {
 
   .container--promo {
     padding-top: 70px;
+    padding-bottom: 64px;
   }
 }
 
@@ -1365,6 +1373,14 @@ input[type=radio].visually-hidden {
   }
 }
 
+@media (max-width:767px) {
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 44px;
+  }
+}
+
 .trainers-list {
   list-style: none;
   padding: 0;
@@ -1465,6 +1481,30 @@ input[type=radio].visually-hidden {
   .trainers-list__item:nth-child(n+3) {
     display: none;
   }
+
+  .trainers-list__profile-image img {
+    width: 268px;
+  }
+}
+
+@media (max-width:767px) {
+  .trainers-list__item {
+    width: 226px;
+    margin: 0 auto;
+  }
+
+  .trainers-list__item:nth-child(n+2) {
+    display: none;
+  }
+
+  .trainers-list__profile {
+    height: 274px;
+  }
+
+  .trainers-list__profile-image img {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .actions-info {
@@ -1493,6 +1533,12 @@ input[type=radio].visually-hidden {
   padding-bottom: 35px;
 }
 
+@media (max-width:767px) {
+  .actions-info {
+    padding-top: 45px;
+  }
+}
+
 .skills-list {
   list-style-type: disc;
   font-size: 14px;
@@ -1507,6 +1553,12 @@ input[type=radio].visually-hidden {
 @media (max-width:1199px) {
   .skills-list {
     padding-right: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .skills-list {
+    padding-left: 50px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
