@@ -12,3 +12,12 @@
   margin: 0;
   padding-bottom: 55px;
 }
+
+@media (max-width: $tablet-width) {
+  .trainers h2 {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 42px;
+  }
+}

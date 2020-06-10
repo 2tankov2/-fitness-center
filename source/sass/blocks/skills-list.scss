@@ -10,3 +10,9 @@
 .skills-list__item {
   padding-bottom: 14px;
 }
+
+@media (max-width: $tablet-width) {
+  .skills-list {
+    padding-right: 10px;
+  }
+}
