@@ -227,6 +227,31 @@ input[type=radio].visually-hidden {
   padding-bottom: 24px;
 }
 
+.button--back,
+.button--next {
+  position: absolute;
+  bottom: 135px;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  padding: 0;
+  border-bottom: 1px solid #afafaf;
+}
+
+.button--back {
+  left: -51px;
+  border-left: 1px solid #afafaf;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button--next {
+  right: -51px;
+  border-right: 1px solid #afafaf;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 @media (max-width:1199px) {
   .button--subscription-buy {
     width: 187px;
@@ -393,6 +418,11 @@ input[type=radio].visually-hidden {
 
 .container--promo {
   padding-top: 120px;
+  padding-bottom: 113px;
+}
+
+.container--trainers {
+  padding-bottom: 60px;
 }
 
 @media (max-width:1199px) {
@@ -1157,6 +1187,10 @@ input[type=radio].visually-hidden {
   .promo__photo img {
     width: 100%;
   }
+
+  .promo__photo {
+    max-height: none;
+  }
 }
 
 .info {
@@ -1294,5 +1328,137 @@ input[type=radio].visually-hidden {
   .info {
     padding-bottom: 50px;
   }
+}
+
+.trainers {
+  position: relative;
+}
+
+.trainers h2 {
+  font-family: "bebas_neue","Arial",cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: .03em;
+  color: #102654;
+  margin: 0;
+  padding-bottom: 55px;
+}
+
+.trainers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.trainers-list__item {
+  position: relative;
+  width: 260px;
+  max-height: 294px;
+  color: #fff;
+  margin-right: 3.5%;
+}
+
+.trainers-list__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.trainers-list__item:focus .trainers-list__actions,
+.trainers-list__item:hover .trainers-list__actions {
+  display: block;
+}
+
+.trainers-list__item:focus .trainers-list__profile p,
+.trainers-list__item:hover .trainers-list__profile p {
+  display: none;
+}
+
+.trainers-list__actions {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background-image: url("../img/actions.png");
+}
+
+.trainers-list__profile {
+  position: relative;
+  width: 100%;
+  height: 294px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.trainers-list__profile p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.trainers-list__profile-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.trainers-list__profile-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+  height: 100%;
+}
+
+.actions-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 135%;
+  padding-top: 53px;
+}
+
+.actions-info h3,
+.actions-info p {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.actions-info p {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 35px;
+}
+
+.skills-list {
+  list-style-type: disc;
+  font-size: 14px;
+  padding: 0 5px 0 71px;
+  line-height: 150%;
+}
+
+.skills-list__item {
+  padding-bottom: 14px;
 }
 /*# sourceMappingURL=style.min.css.map */
