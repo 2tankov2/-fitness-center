@@ -332,34 +332,36 @@
     <div class="container container--ads">
       <section class="ads">
         <h2>Акции</h2>
-        <div class="ads__col">
-          <div class="ads__info">
-            <p>Год</p>
-            <p>4999</p>
-            <p>Безлимитный абонемент в тренажерный зал</p>
-            <a>Подробнее</a>
+        <div class="ads__row">
+          <div class="ads__subscription">
+            <div class="ads__info">
+              <p class="ads__info-year">Год</p>
+              <p class="ads__info-date">4999</p>
+              <p class="ads__info-text">Безлимитный абонемент в&nbsp;тренажерный зал</p>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="ads__photo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/adswomen-mobile.jpg 1x, img/adswomen-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/adswomen-tablet.jpg 1x, img/adswomen-tablet@2x.jpg 2x">
+                <img src="img/adswomen-desctop.jpg" srcset="img/adswomen-desktop@2x.jpg 2x" alt="Спортсменка">
+              </picture>
+            </div>
           </div>
-          <div class="ads__photo">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/adswomen-mobile.jpg 1x, img/adswomen-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)" srcset="img/adswomen-tablet.jpg 1x, img/adswomen-tablet@2x.jpg 2x">
-              <img src="img/adswomen-desctop.jpg" srcset="img/adswomen-desktop@2x.jpg 2x" alt="Спортсменка">
-            </picture>
+          <div class="ads__col">
+            <ul class="ads-list">
+              <li class="ads-list__item">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+                <a href="#">Подробнее</a>
+              </li>
+              <li class="ads-list__item">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a href="#">Подробнее</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="ads__col">
-          <ul class="ads-list">
-            <li class="ads-list__item">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a>Подробнее</a>
-            </li>
-            <li class="ads-list__item">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a>Подробнее</a>
-            </li>
-          </ul>
         </div>
       </section>
     </div>
