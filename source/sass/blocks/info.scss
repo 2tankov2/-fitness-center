@@ -12,6 +12,15 @@
   padding-bottom: 14px;
 }
 
+.info__section h2 {
+  font-family: "bebas_neue", "Ariel", cursive;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 90px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
 .info__container {
   display: flex;
   flex-direction: column;
@@ -21,16 +30,6 @@
 .info__container p {
   margin: 0;
   line-height: 130%;
-}
-
-.info__topic {
-  font-family: "bebas_neue", "Ariel", cursive;
-  font-weight: bold;
-  font-size: 90px;
-  line-height: 90px;
-  letter-spacing: 0.03em;
-  padding-right: 20px;
-  margin: 0;
 }
 
 .info__name {
@@ -88,7 +87,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .info__topic {
+  .info__section h2 {
     font-size: 52px;
     line-height: 52px;
   }

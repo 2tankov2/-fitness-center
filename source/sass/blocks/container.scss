@@ -3,6 +3,16 @@
   margin: 0 auto;
 }
 
+.container h2 {
+  font-family: "bebas_neue", "Arial", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  color: #102654;
+}
+
 .container--page-header {
   padding-top: 31px;
   padding-bottom: 50px;
@@ -33,6 +43,11 @@
     width: 88.3%;
   }
 
+  .container h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
   .container--page-header {
     padding-top: 38px;
     padding-bottom: 81px;
@@ -56,6 +71,11 @@
 @media (max-width: $mobile-width) {
   .container {
     width: 91%;
+  }
+
+  .container h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .container--page-header {

@@ -3,20 +3,11 @@
 }
 
 .trainers h2 {
-  font-family: "bebas_neue", "Arial", cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-
-  color: #102654;
-  margin: 0;
   padding-bottom: 55px;
 }
 
 @media (max-width: $tablet-width) {
   .trainers h2 {
-    font-size: 42px;
-    line-height: 42px;
     text-align: center;
     padding-bottom: 42px;
   }
@@ -24,8 +15,6 @@
 
 @media (max-width: $mobile-width) {
   .trainers h2 {
-    font-size: 32px;
-    line-height: 32px;
     padding-bottom: 44px;
   }
 }

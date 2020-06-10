@@ -415,6 +415,15 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
 }
 
+.container h2 {
+  font-family: "bebas_neue","Arial",cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: .03em;
+  margin: 0;
+  color: #102654;
+}
+
 .container--page-header {
   padding-top: 31px;
   padding-bottom: 50px;
@@ -445,6 +454,11 @@ input[type=radio].visually-hidden {
     width: 88.3%;
   }
 
+  .container h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
   .container--page-header {
     padding-top: 38px;
     padding-bottom: 81px;
@@ -468,6 +482,11 @@ input[type=radio].visually-hidden {
 @media (max-width:767px) {
   .container {
     width: 91%;
+  }
+
+  .container h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .container--page-header {
@@ -538,8 +557,11 @@ input[type=radio].visually-hidden {
 
 .gym h2,
 .main-screen p {
-  font-family: "bebas_neue","Arial",cursive;
   text-transform: uppercase;
+  font-family: "bebas_neue","Arial",cursive;
+}
+
+.main-screen p {
   margin: 0;
 }
 
@@ -648,9 +670,6 @@ input[type=radio].visually-hidden {
 }
 
 .gym h2 {
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: .03em;
   color: #102654;
 }
 
@@ -735,11 +754,6 @@ input[type=radio].visually-hidden {
     align-items: center;
   }
 
-  .gym h2 {
-    font-size: 42px;
-    line-height: 42px;
-  }
-
   .gym__container,
   .gym__info {
     -webkit-box-orient: vertical;
@@ -822,8 +836,6 @@ input[type=radio].visually-hidden {
 
   .gym h2 {
     padding-left: 5%;
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .gym__container {
@@ -896,11 +908,7 @@ input[type=radio].visually-hidden {
 
 .subscription h2 {
   text-transform: uppercase;
-  font-family: "bebas_neue","Arial",cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: .03em;
-  margin: 0 0 37px;
+  margin-bottom: 37px;
   color: #102654;
 }
 
@@ -910,8 +918,6 @@ input[type=radio].visually-hidden {
 
 @media (max-width:1199px) {
   .subscription h2 {
-    font-size: 42px;
-    line-height: 42px;
     margin-bottom: 30px;
   }
 
@@ -922,8 +928,6 @@ input[type=radio].visually-hidden {
 
 @media (max-width:767px) {
   .subscription h2 {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 23px;
   }
 
@@ -1239,6 +1243,15 @@ input[type=radio].visually-hidden {
   padding-bottom: 14px;
 }
 
+.info__section h2 {
+  font-family: "bebas_neue","Ariel",cursive;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  padding-right: 20px;
+  color: #fff;
+}
+
 .info__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1252,16 +1265,6 @@ input[type=radio].visually-hidden {
 .info__container p {
   margin: 0;
   line-height: 130%;
-}
-
-.info__topic {
-  font-family: "bebas_neue","Ariel",cursive;
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 90px;
-  letter-spacing: .03em;
-  padding-right: 20px;
-  margin: 0;
 }
 
 .info__name {
@@ -1314,7 +1317,7 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:1199px) {
-  .info__topic {
+  .info__section h2 {
     font-size: 52px;
     line-height: 52px;
   }
@@ -1355,19 +1358,11 @@ input[type=radio].visually-hidden {
 }
 
 .trainers h2 {
-  font-family: "bebas_neue","Arial",cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: .03em;
-  color: #102654;
-  margin: 0;
   padding-bottom: 55px;
 }
 
 @media (max-width:1199px) {
   .trainers h2 {
-    font-size: 42px;
-    line-height: 42px;
     text-align: center;
     padding-bottom: 42px;
   }
@@ -1375,8 +1370,6 @@ input[type=radio].visually-hidden {
 
 @media (max-width:767px) {
   .trainers h2 {
-    font-size: 32px;
-    line-height: 32px;
     padding-bottom: 44px;
   }
 }

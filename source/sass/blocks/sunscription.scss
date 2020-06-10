@@ -6,11 +6,6 @@
 
 .subscription h2 {
   text-transform: uppercase;
-  font-family: "bebas_neue", "Arial", cursive;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  margin: 0;
   margin-bottom: 37px;
 
   color: #102654;
@@ -22,8 +17,6 @@
 
 @media (max-width: $tablet-width) {
   .subscription h2 {
-    font-size: 42px;
-    line-height: 42px;
     margin-bottom: 30px;
   }
 
@@ -34,8 +27,6 @@
 
 @media (max-width: $mobile-width) {
   .subscription h2 {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 23px;
   }
 
