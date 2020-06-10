@@ -268,6 +268,14 @@ input[type=radio].visually-hidden {
     font-size: 10px;
     line-height: 12px;
   }
+
+  .button--back {
+    left: 4px;
+  }
+
+  .button--next {
+    right: 4px;
+  }
 }
 
 @media (max-width:767px) {
@@ -277,6 +285,13 @@ input[type=radio].visually-hidden {
 
   .button--buy {
     margin-bottom: 44px;
+  }
+
+  .button--back,
+  .button--next {
+    bottom: 130px;
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -446,6 +461,7 @@ input[type=radio].visually-hidden {
 
   .container--promo {
     padding-top: 99px;
+    padding-bottom: 98px;
   }
 }
 
@@ -472,6 +488,7 @@ input[type=radio].visually-hidden {
 
   .container--promo {
     padding-top: 70px;
+    padding-bottom: 64px;
   }
 }
 
@@ -1171,6 +1188,9 @@ input[type=radio].visually-hidden {
 
   .promo__photo {
     max-height: 292px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
   }
 }
 
@@ -1344,6 +1364,23 @@ input[type=radio].visually-hidden {
   padding-bottom: 55px;
 }
 
+@media (max-width:1199px) {
+  .trainers h2 {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 42px;
+  }
+}
+
+@media (max-width:767px) {
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 44px;
+  }
+}
+
 .trainers-list {
   list-style: none;
   padding: 0;
@@ -1422,7 +1459,52 @@ input[type=radio].visually-hidden {
   object-fit: cover;
   -o-object-position: bottom;
   object-position: bottom;
-  height: 100%;
+  height: 294px;
+  width: 268px;
+}
+
+@media (max-width:1199px) {
+  .trainers-list {
+    width: 83.5%;
+    margin: 0 auto;
+  }
+
+  .trainers-list__item {
+    width: 268px;
+    margin-right: 4.5%;
+  }
+
+  .trainers-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .trainers-list__item:nth-child(n+3) {
+    display: none;
+  }
+
+  .trainers-list__profile-image img {
+    width: 268px;
+  }
+}
+
+@media (max-width:767px) {
+  .trainers-list__item {
+    width: 226px;
+    margin: 0 auto;
+  }
+
+  .trainers-list__item:nth-child(n+2) {
+    display: none;
+  }
+
+  .trainers-list__profile {
+    height: 274px;
+  }
+
+  .trainers-list__profile-image img {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .actions-info {
@@ -1451,6 +1533,12 @@ input[type=radio].visually-hidden {
   padding-bottom: 35px;
 }
 
+@media (max-width:767px) {
+  .actions-info {
+    padding-top: 45px;
+  }
+}
+
 .skills-list {
   list-style-type: disc;
   font-size: 14px;
@@ -1460,5 +1548,17 @@ input[type=radio].visually-hidden {
 
 .skills-list__item {
   padding-bottom: 14px;
+}
+
+@media (max-width:1199px) {
+  .skills-list {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .skills-list {
+    padding-left: 50px;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
