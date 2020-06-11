@@ -12,3 +12,17 @@
   margin: 0;
   padding-left: 20px;
 }
+
+@media (max-width: $tablet-width) {
+  .social-list {
+    width: 100px;
+  }
+
+  .social-list__item {
+    padding-left: 20px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
