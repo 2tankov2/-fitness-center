@@ -28,14 +28,7 @@
 .advantages-list__item {
   display: flex;
   justify-content: space-between;
-}
-
-.advantages-list__item--left {
-  width: 337px;
-}
-
-.advantages-list__item--right {
-  width: 337px;
+  width: 33.7%;
 }
 
 .advantages-list__item-amount {
@@ -82,4 +75,28 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .advantages-list--top {
+    margin-bottom: 44px;
+
+    .advantages-list__item::before {
+      display: none;
+    }
+  }
+
+  .advantages-list__item {
+    width: 47.5%;
+  }
+
+  .advantages-list__item-amount p {
+    padding-bottom: 0;
+    font-size: 58px;
+    line-height: 56px;
+  }
+
+  .advantages-list__item-info h3 {
+    font-size: 20px;
+    padding-bottom: 7px;
+  }
+
 }
