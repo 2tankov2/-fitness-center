@@ -37,3 +37,23 @@
   line-height: 16px;
   color: #ffffff;
 }
+
+@media (max-width: $tablet-width) {
+  .free-lesson {
+    width: 472px;
+    padding-left: 133px;
+  }
+
+  .free-lesson h2 {
+    padding-bottom: 37px;
+  }
+
+  .free-lesson__item {
+    width: 100%;
+    padding-bottom: 27px;
+  }
+
+  .free-lesson__item input {
+    width: 43%;
+  }
+}

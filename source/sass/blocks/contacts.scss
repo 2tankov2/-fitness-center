@@ -8,3 +8,16 @@
 .contacts h2 {
   padding-bottom: 45px;
 }
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: 69.3%;
+    padding-left: 133px;
+    padding-top: 67px;
+    padding-bottom: 37px;
+  }
+
+  .contacts h2 {
+    padding-bottom: 40px;
+  }
+}

@@ -23,6 +23,10 @@
     bottom: -128px;
     right: 0;
   }
+
+  .wrapper--contacts {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: $mobile-width) {
