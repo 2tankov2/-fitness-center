@@ -48,3 +48,8 @@
   line-height: 140%;
 }
 
+@media (max-width: $tablet-width) {
+  .reviews h2 {
+    padding-bottom: 42px;
+  }
+}

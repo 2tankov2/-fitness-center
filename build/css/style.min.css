@@ -302,6 +302,14 @@ input[type=radio].visually-hidden {
   .button--trainers-next {
     right: 4px;
   }
+
+  .button--reviews-back {
+    left: .6%;
+  }
+
+  .button--reviews-next {
+    right: .6%;
+  }
 }
 
 @media (max-width:767px) {
@@ -555,7 +563,11 @@ input[type=radio].visually-hidden {
 
   .container--ads {
     padding-top: 97px;
-    padding-bottom: 113px;
+    padding-bottom: 98px;
+  }
+
+  .container--reviews {
+    padding-bottom: 100px;
   }
 }
 
@@ -2109,6 +2121,12 @@ input[type=radio].visually-hidden {
   margin: 0;
   font-size: 16px;
   line-height: 140%;
+}
+
+@media (max-width:1199px) {
+  .reviews h2 {
+    padding-bottom: 42px;
+  }
 }
 
 .free-lesson {
