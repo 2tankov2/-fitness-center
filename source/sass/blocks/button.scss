@@ -56,8 +56,6 @@
 
 .button--back {
   position: absolute;
-  left: -51px;
-  bottom: 135px;
   width: 24px;
   height: 24px;
   border: none;
@@ -69,8 +67,6 @@
 
 .button--next {
   position: absolute;
-  right: -51px;
-  bottom: 135px;
   width: 24px;
   height: 24px;
   border: none;
@@ -78,6 +74,26 @@
   border-bottom: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
   transform: rotate(-45deg);
+}
+
+.button--trainers-back {
+  left: -51px;
+  bottom: 135px;
+}
+
+.button--trainers-next {
+  right: -51px;
+  bottom: 135px;
+}
+
+.button--reviews-back {
+  left: 250px;
+  bottom: 110px;
+}
+
+.button--reviews-next {
+  right: 250px;
+  bottom: 110px;
 }
 
 @media (max-width: $tablet-width) {
@@ -97,11 +113,11 @@
     line-height: 12px;
   }
 
-  .button--back {
+  .button--trainers-back {
     left: 4px;
   }
 
-  .button--next {
+  .button--trainers-next {
     right: 4px;
   }
 }
@@ -115,8 +131,8 @@
     margin-bottom: 44px;
   }
 
-  .button--back,
-  .button--next {
+  .button--trainers-back,
+  .button--trainers-next {
     bottom: 130px;
     width: 14px;
     height: 14px;
