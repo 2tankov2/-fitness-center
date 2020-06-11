@@ -111,3 +111,27 @@
     flex-grow: 1;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .ads__subscription {
+    flex-direction: column;
+  }
+
+  .ads__info,
+  .ads__photo {
+    width: auto;
+  }
+
+  .ads__info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .ads__info-date {
+    padding-bottom: 17px;
+  }
+
+  .ads__info-text {
+    padding-bottom: 30px;
+  }
+}

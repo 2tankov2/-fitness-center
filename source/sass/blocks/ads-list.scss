@@ -62,7 +62,33 @@
     margin-bottom: 0;
   }
 
-  .ads-list__item:nth-child(1) p {
+  .ads-list__item p {
     padding-bottom: 45px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .ads-list {
+    flex-direction: column;
+  }
+
+  .ads-list__item {
+    width: 100%;
+    padding-bottom: 37px;
+    margin-bottom: 32px;
+
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .ads-list__item h3 {
+    padding-top: 30px;
+    padding-bottom: 9px;
+  }
+
+  .ads-list__item p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 23px;
   }
 }
