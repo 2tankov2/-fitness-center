@@ -48,3 +48,34 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .page-footer__logo-link {
+    position: absolute;
+    width: 70px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .page-footer__menu {
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0;
+    max-height: 130px;
+    padding-bottom: 14px;
+  }
+
+  .page-footer__menu a {
+    padding-left: 0;
+    padding-bottom: 22px;
+    padding-right: 90px;
+    width: 70px;
+
+    &:first-child {
+      padding-top: 40px;
+    }
+  }
+}

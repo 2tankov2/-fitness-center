@@ -14,10 +14,17 @@
     width: 69.3%;
     padding-left: 133px;
     padding-top: 67px;
-    padding-bottom: 37px;
+    padding-bottom: 38px;
   }
 
   .contacts h2 {
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    width: 100%;
+    padding-left: 15px;
   }
 }

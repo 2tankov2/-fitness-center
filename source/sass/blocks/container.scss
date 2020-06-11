@@ -178,8 +178,6 @@
     padding-bottom: 66px;
   }
 
-
-
   .container--reviews {
     padding-bottom: 69px;
   }
@@ -193,6 +191,12 @@
   }
 
   .container--footer {
-    padding-top: 44px;
+    position: relative;
+    padding-top: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    /*align-items: center;
+    padding-top: 42px;
+    padding-bottom: 44px;*/
   }
 }

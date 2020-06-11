@@ -80,3 +80,21 @@
     line-height: 21px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .contacts-list {
+    flex-direction: column;
+  }
+
+  .contacts-list::before {
+    display: none;
+  }
+
+  .contacts-list__item--tel {
+    order: 2;
+  }
+
+  .contacts-list__item--mail {
+    order: 3;
+  }
+}

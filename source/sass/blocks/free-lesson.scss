@@ -57,3 +57,21 @@
     width: 43%;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .free-lesson {
+    width: 91%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .free-lesson__item {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .free-lesson__item input {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
