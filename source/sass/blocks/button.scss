@@ -96,6 +96,15 @@
   bottom: 110px;
 }
 
+.button--form {
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
 @media (max-width: $tablet-width) {
   .button--subscription-buy {
     width: 187px;

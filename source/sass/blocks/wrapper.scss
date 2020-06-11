@@ -13,6 +13,10 @@
   }
 }
 
+.wrapper--contacts {
+  display: flex;
+}
+
 @media (max-width: $tablet-width) {
   .wrapper--subscription::after {
     content: url("../../img/pancakes-tablet.png");

@@ -1,0 +1,39 @@
+.free-lesson {
+  width: 410px;
+  padding-left: 103px;
+  padding-top: 65px;
+  padding-bottom: 66px;
+}
+
+.free-lesson h2 {
+  color: #ffffff;
+  padding-bottom: 43px;
+}
+
+.free-lesson form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.free-lesson__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.free-lesson__item input {
+  width: 45.5%;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  color: #ffffff;
+  background-color: #1c3374;
+  padding-bottom: 5px;
+}
+
+.free-lesson__item input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}

@@ -269,6 +269,15 @@ input[type=radio].visually-hidden {
   bottom: 110px;
 }
 
+.button--form {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
 @media (max-width:1199px) {
   .button--subscription-buy {
     width: 187px;
@@ -481,6 +490,16 @@ input[type=radio].visually-hidden {
   padding-bottom: 120px;
 }
 
+.container--form {
+  width: 50%;
+  background-color: #1c3374;
+}
+
+.container--contacts {
+  width: 50%;
+  border-top: 1px solid #74819c;
+}
+
 @media (max-width:1199px) {
   .container {
     width: 88.3%;
@@ -558,6 +577,13 @@ input[type=radio].visually-hidden {
   right: 0;
 }
 
+.main-screen,
+.wrapper--contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width:1199px) {
   .wrapper--subscription::after {
     content: url("../img/pancakes-tablet.png");
@@ -575,9 +601,6 @@ input[type=radio].visually-hidden {
 .main-screen {
   width: 32.5%;
   text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1922,5 +1945,141 @@ input[type=radio].visually-hidden {
   margin: 0;
   font-size: 16px;
   line-height: 140%;
+}
+
+.free-lesson {
+  width: 410px;
+  padding-left: 103px;
+  padding-top: 65px;
+  padding-bottom: 66px;
+}
+
+.free-lesson h2 {
+  color: #fff;
+  padding-bottom: 43px;
+}
+
+.free-lesson form,
+.free-lesson__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.free-lesson form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.free-lesson__item {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.free-lesson__item input {
+  width: 45.5%;
+  border: 0;
+  border-bottom: 1px solid #74819c;
+  color: #fff;
+  background-color: #1c3374;
+  padding-bottom: 5px;
+}
+
+.free-lesson__item input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.free-lesson__item input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.free-lesson__item input:-ms-input-placeholder,
+.free-lesson__item input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.free-lesson__item input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.contacts {
+  width: 464px;
+  padding-left: 120px;
+  padding-top: 65px;
+}
+
+.contacts,
+.contacts h2 {
+  padding-bottom: 45px;
+}
+
+.contacts-list {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #102654;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts-list::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 22%;
+  background-color: #84819c;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 55px;
+  left: 183px;
+}
+
+.contacts-list__item {
+  width: 170px;
+  padding-right: 60px;
+  padding-left: 3px;
+  padding-bottom: 18px;
+}
+
+.contacts-list__item:nth-child(2n) {
+  padding-right: 0;
+}
+
+.contacts-list__item h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.contacts-list__item a,
+.contacts-list__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
 }
 /*# sourceMappingURL=style.min.css.map */
