@@ -79,3 +79,35 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: $tablet-width) {
+  .ads h2 {
+    padding-bottom: 43px;
+  }
+
+  .ads__row {
+    flex-direction: column;
+    flex-grow: 0;
+  }
+
+  .ads__subscription,
+  .ads__col {
+    width: 100%;
+  }
+
+  .ads__subscription {
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+
+  .ads__info {
+    width: 34.7%;
+    padding-left: 6.5%;
+
+    flex-grow: 0;
+  }
+
+  .ads__photo {
+    flex-grow: 1;
+  }
+}

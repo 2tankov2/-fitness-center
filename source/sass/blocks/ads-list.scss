@@ -49,3 +49,20 @@
   line-height: 14px;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: $tablet-width) {
+  .ads-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ads-list__item {
+    width: 48%;
+
+    margin-bottom: 0;
+  }
+
+  .ads-list__item:nth-child(1) p {
+    padding-bottom: 45px;
+  }
+}
