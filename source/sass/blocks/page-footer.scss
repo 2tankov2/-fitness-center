@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: #000000;
+}
+
+.page-footer a {
+  color: #ffffff;
+}
+
+.page-footer__logo-link {
+  font-family: "bebas_neue", "Arial", cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.page-footer__menu {
+  width: 465px;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-footer__menu a {
+  padding-left: 40px;
+}

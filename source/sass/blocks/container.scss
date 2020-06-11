@@ -63,6 +63,14 @@
   border-top: 1px solid #74819C;
 }
 
+.container--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
 @media (max-width: $tablet-width) {
   .container {
     width: 88.3%;
