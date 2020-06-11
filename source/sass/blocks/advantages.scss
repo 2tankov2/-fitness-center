@@ -9,15 +9,18 @@
 }
 
 .advantages__wrapper {
+  position: relative;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding-left: 25px;
+  flex-direction: column;
   margin: 0;
+  padding-left: 20px;
 }
 
 .advantages__center {
+  position: absolute;
   width: 240px;
+  left: 38.5%;
   background: #1c3374;
   color: #ffffff;
   display: flex;
@@ -46,5 +49,12 @@
   line-height: 150%;
   margin: 0;
   text-align: center;
-  padding: 44px 25px 20px 25px;
+  padding: 44px 25px 60px 25px;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__wrapper {
+    flex-direction: column;
+    padding-left: 0;
+  }
 }
