@@ -260,12 +260,12 @@ input[type=radio].visually-hidden {
 }
 
 .button--reviews-back {
-  left: 250px;
+  left: 21.5%;
   bottom: 110px;
 }
 
 .button--reviews-next {
-  right: 250px;
+  right: 21.5%;
   bottom: 110px;
 }
 
@@ -301,6 +301,14 @@ input[type=radio].visually-hidden {
 
   .button--trainers-next {
     right: 4px;
+  }
+
+  .button--reviews-back {
+    left: .6%;
+  }
+
+  .button--reviews-next {
+    right: .6%;
   }
 }
 
@@ -548,9 +556,23 @@ input[type=radio].visually-hidden {
   }
 
   .container--advantages {
-    width: 85%;
+    width: 88%;
     padding-top: 98px;
+    padding-bottom: 95px;
+  }
+
+  .container--ads {
+    padding-top: 97px;
+    padding-bottom: 98px;
+  }
+
+  .container--reviews {
     padding-bottom: 100px;
+  }
+
+  .container--contacts,
+  .container--form {
+    width: 100%;
   }
 }
 
@@ -601,7 +623,6 @@ input[type=radio].visually-hidden {
   right: 0;
 }
 
-.main-screen,
 .wrapper--contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,6 +635,13 @@ input[type=radio].visually-hidden {
     bottom: -128px;
     right: 0;
   }
+
+  .wrapper--contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 @media (max-width:767px) {
@@ -625,6 +653,9 @@ input[type=radio].visually-hidden {
 .main-screen {
   width: 32.5%;
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1640,6 +1671,7 @@ input[type=radio].visually-hidden {
 }
 
 .advantages {
+  width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1663,7 +1695,7 @@ input[type=radio].visually-hidden {
 
 .advantages__wrapper {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 2.5%;
   position: relative;
   width: 100%;
 }
@@ -1701,12 +1733,32 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:1199px) {
+  .advantages h2 {
+    padding-bottom: 50px;
+  }
+
   .advantages__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     padding-left: 0;
+  }
+
+  .advantages__center {
+    position: relative;
+    width: 442px;
+    left: 0;
+    margin: 0 auto 45px;
+  }
+
+  .advantages__center h2 {
+    padding-top: 46px;
+    padding-bottom: 25px;
+  }
+
+  .advantages__center h3 {
+    font-size: 22px;
+  }
+
+  .advantages__center p {
+    padding: 23px 135px 38px;
   }
 }
 
@@ -1747,11 +1799,7 @@ input[type=radio].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.advantages-list__item--left,
-.advantages-list__item--right {
-  width: 337px;
+  width: 33.7%;
 }
 
 .advantages-list__item-amount {
@@ -1803,6 +1851,29 @@ input[type=radio].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .advantages-list--top {
+    margin-bottom: 44px;
+  }
+
+  .advantages-list--top .advantages-list__item::before {
+    display: none;
+  }
+
+  .advantages-list__item {
+    width: 47.5%;
+  }
+
+  .advantages-list__item-amount p {
+    padding-bottom: 0;
+    font-size: 58px;
+    line-height: 56px;
+  }
+
+  .advantages-list__item-info h3 {
+    font-size: 20px;
+    padding-bottom: 7px;
   }
 }
 
@@ -1899,6 +1970,46 @@ input[type=radio].visually-hidden {
   object-fit: cover;
 }
 
+@media (max-width:1199px) {
+  .ads h2 {
+    padding-bottom: 43px;
+  }
+
+  .ads__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+
+  .ads__col,
+  .ads__subscription {
+    width: 100%;
+  }
+
+  .ads__subscription {
+    margin-right: 0;
+    margin-bottom: 27px;
+  }
+
+  .ads__info {
+    width: 34.7%;
+    padding-left: 6.5%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+
+  .ads__photo {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
 .ads-list {
   width: 100%;
   margin: 0;
@@ -1943,6 +2054,26 @@ input[type=radio].visually-hidden {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: .05em;
+}
+
+@media (max-width:1199px) {
+  .ads-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .ads-list__item {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .ads-list__item:nth-child(1) p {
+    padding-bottom: 45px;
+  }
 }
 
 .reviews,
@@ -2004,6 +2135,12 @@ input[type=radio].visually-hidden {
   margin: 0;
   font-size: 16px;
   line-height: 140%;
+}
+
+@media (max-width:1199px) {
+  .reviews h2 {
+    padding-bottom: 42px;
+  }
 }
 
 .free-lesson {
@@ -2074,6 +2211,26 @@ input[type=radio].visually-hidden {
   color: #fff;
 }
 
+@media (max-width:1199px) {
+  .free-lesson {
+    width: 472px;
+    padding-left: 133px;
+  }
+
+  .free-lesson h2 {
+    padding-bottom: 37px;
+  }
+
+  .free-lesson__item {
+    width: 100%;
+    padding-bottom: 27px;
+  }
+
+  .free-lesson__item input {
+    width: 43%;
+  }
+}
+
 .contacts {
   width: 464px;
   padding-left: 120px;
@@ -2083,6 +2240,19 @@ input[type=radio].visually-hidden {
 .contacts,
 .contacts h2 {
   padding-bottom: 45px;
+}
+
+@media (max-width:1199px) {
+  .contacts {
+    width: 69.3%;
+    padding-left: 133px;
+    padding-top: 67px;
+    padding-bottom: 37px;
+  }
+
+  .contacts h2 {
+    padding-bottom: 40px;
+  }
 }
 
 .contacts-list {
@@ -2140,6 +2310,37 @@ input[type=radio].visually-hidden {
   font-size: 14px;
   line-height: 21px;
   color: #102654;
+}
+
+@media (max-width:1199px) {
+  .contacts-list::before {
+    width: 24%;
+    top: 67px;
+    left: 202px;
+  }
+
+  .contacts-list__item {
+    width: 218px;
+    padding-right: 20px;
+    padding-left: 0;
+    padding-bottom: 28px;
+  }
+
+  .contacts-list__item:nth-child(2n) {
+    padding-right: 0;
+  }
+
+  .contacts-list__item h3 {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 12px;
+  }
+
+  .contacts-list__item a,
+  .contacts-list__item p {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .page-footer {
