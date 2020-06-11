@@ -82,5 +82,24 @@
   .advantages__center p {
     padding: 23px 135px 38px 135px;
   }
+}
 
+@media (max-width: $mobile-width) {
+  .advantages h2 {
+    padding-bottom: 50px;
+  }
+
+  .advantages__center {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .advantages__center h2 {
+    padding-top: 57px;
+    padding-bottom: 25px;
+  }
+
+  .advantages__center p {
+    padding: 16px 65px 44px 65px;
+  }
 }

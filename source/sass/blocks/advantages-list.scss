@@ -98,5 +98,45 @@
     font-size: 20px;
     padding-bottom: 7px;
   }
+}
 
+@media (max-width: $mobile-width) {
+  .advantages-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages-list--top {
+    margin-bottom: 5px;
+  }
+
+  .advantages-list__item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 38px;
+  }
+
+  .advantages-list__item-amount {
+    margin-right: 0;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  .advantages-list__item-info {
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+  }
+
+
+
+  .advantages-list__item-info h3 {
+    padding-bottom: 7px;
+  }
+
+  .advantages-list__item--text {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }

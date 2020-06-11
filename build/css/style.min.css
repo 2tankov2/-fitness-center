@@ -610,6 +610,34 @@ input[type=radio].visually-hidden {
     padding-top: 70px;
     padding-bottom: 64px;
   }
+
+  .container--trainers {
+    padding-bottom: 70px;
+  }
+
+  .container--advantages {
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 25px;
+  }
+
+  .container--ads {
+    padding-top: 97px;
+    padding-bottom: 98px;
+  }
+
+  .container--reviews {
+    padding-bottom: 100px;
+  }
+
+  .container--contacts,
+  .container--form {
+    width: 100%;
+  }
+
+  .container--footer {
+    padding-top: 44px;
+  }
 }
 
 .wrapper {
@@ -1766,6 +1794,26 @@ input[type=radio].visually-hidden {
   }
 }
 
+@media (max-width:767px) {
+  .advantages h2 {
+    padding-bottom: 50px;
+  }
+
+  .advantages__center {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .advantages__center h2 {
+    padding-top: 57px;
+    padding-bottom: 25px;
+  }
+
+  .advantages__center p {
+    padding: 16px 65px 44px;
+  }
+}
+
 .advantages-list {
   width: 100%;
   list-style: none;
@@ -1878,6 +1926,55 @@ input[type=radio].visually-hidden {
   .advantages-list__item-info h3 {
     font-size: 20px;
     padding-bottom: 7px;
+  }
+}
+
+@media (max-width:767px) {
+  .advantages-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages-list--top {
+    margin-bottom: 5px;
+  }
+
+  .advantages-list__item {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 38px;
+  }
+
+  .advantages-list__item-amount {
+    margin-right: 0;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  .advantages-list__item-info {
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+  }
+
+  .advantages-list__item-info h3 {
+    padding-bottom: 7px;
+  }
+
+  .advantages-list__item--text {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
