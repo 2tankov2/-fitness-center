@@ -327,6 +327,13 @@ input[type=radio].visually-hidden {
     width: 14px;
     height: 14px;
   }
+
+  .button--reviews-back,
+  .button--reviews-next {
+    bottom: 159px;
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .page-header {
@@ -627,7 +634,7 @@ input[type=radio].visually-hidden {
   }
 
   .container--reviews {
-    padding-bottom: 100px;
+    padding-bottom: 69px;
   }
 
   .container--contacts,
@@ -2202,7 +2209,7 @@ input[type=radio].visually-hidden {
     margin-bottom: 0;
   }
 
-  .ads-list__item p {
+  .ads-list__item:nth-child(1) p {
     padding-bottom: 45px;
   }
 }
@@ -2226,6 +2233,10 @@ input[type=radio].visually-hidden {
   .ads-list__item h3 {
     padding-top: 30px;
     padding-bottom: 9px;
+  }
+
+  .ads-list__item:nth-child(1) p {
+    padding-bottom: 23px;
   }
 
   .ads-list__item p {
@@ -2275,7 +2286,11 @@ input[type=radio].visually-hidden {
 }
 
 .reviews__item-info::before {
-  content: url("../img/reviews.png");
+  content: "";
+  background-image: url("../img/reviews.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
   position: absolute;
   top: 61px;
   left: 62px;
@@ -2298,6 +2313,38 @@ input[type=radio].visually-hidden {
 @media (max-width:1199px) {
   .reviews h2 {
     padding-bottom: 42px;
+  }
+}
+
+@media (max-width:767px) {
+  .reviews__item {
+    width: 226px;
+  }
+
+  .reviews__item-info {
+    width: 176px;
+    padding-left: 0;
+    padding-top: 50px;
+    padding-bottom: 34px;
+    margin: 0 auto;
+  }
+
+  .reviews__item-info::before {
+    width: 68px;
+    height: 68px;
+    background-size: cover;
+    left: 16px;
+    top: 43px;
+  }
+
+  .reviews__item-info h3 {
+    padding-left: 100px;
+    line-height: 27px;
+    padding-bottom: 23px;
+  }
+
+  .reviews__item-info p {
+    text-align: center;
   }
 }
 

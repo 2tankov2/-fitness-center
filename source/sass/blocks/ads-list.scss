@@ -62,7 +62,7 @@
     margin-bottom: 0;
   }
 
-  .ads-list__item p {
+  .ads-list__item:nth-child(1) p {
     padding-bottom: 45px;
   }
 }
@@ -84,6 +84,10 @@
   .ads-list__item h3 {
     padding-top: 30px;
     padding-bottom: 9px;
+  }
+
+  .ads-list__item:nth-child(1) p {
+    padding-bottom: 23px;
   }
 
   .ads-list__item p {
