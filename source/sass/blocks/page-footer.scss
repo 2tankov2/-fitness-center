@@ -12,6 +12,10 @@
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.02em;
+
+  &:hover {
+    color: #ed0233;
+  }
 }
 
 .page-footer__menu {
@@ -26,6 +30,10 @@
 
 .page-footer__menu a {
   padding-left: 40px;
+
+  &:hover {
+    color: #ed0233;
+  }
 }
 
 @media (max-width: $tablet-width) {

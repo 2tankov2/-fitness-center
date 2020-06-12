@@ -194,11 +194,12 @@ input[type=radio].visually-hidden {
 
 .button:hover {
   background-color: #fff;
-  color: #000;
+  color: #1c3374;
 }
 
-.button:active {
-  color: #000;
+.button:active,
+.page-header__social-item a:hover {
+  color: #1c3374;
 }
 
 .button--subscription-buy {
@@ -209,7 +210,7 @@ input[type=radio].visually-hidden {
 
 .button--subscription-buy:active,
 .button--subscription-buy:hover {
-  border-color: green;
+  border-color: #1c3374;
 }
 
 .button--buy {
@@ -225,6 +226,7 @@ input[type=radio].visually-hidden {
   width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
+  cursor: pointer;
 }
 
 .button--back,
@@ -2076,6 +2078,11 @@ input[type=radio].visually-hidden {
   letter-spacing: .05em;
 }
 
+.ads__info a:hover {
+  color: #1c3374;
+  border-bottom-color: #1c3374;
+}
+
 .ads__photo {
   width: 50%;
 }
@@ -2200,6 +2207,11 @@ input[type=radio].visually-hidden {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: .05em;
+}
+
+.ads-list__item a:hover {
+  color: #ed0233;
+  border-bottom-color: #ed0233;
 }
 
 @media (max-width:1199px) {
@@ -2625,6 +2637,11 @@ input[type=radio].visually-hidden {
   letter-spacing: .02em;
 }
 
+.page-footer__logo-link:hover,
+.page-footer__menu a:hover {
+  color: #ed0233;
+}
+
 .page-footer__menu {
   width: 465px;
   display: -webkit-box;
@@ -2715,6 +2732,10 @@ input[type=radio].visually-hidden {
 .social-list__item {
   margin: 0;
   padding: 0 0 0 20px;
+}
+
+.social-list__item svg:hover path {
+  fill: #ed0233;
 }
 
 @media (max-width:1199px) {

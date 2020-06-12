@@ -21,11 +21,11 @@
 
   &:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #1c3374;
   }
 
   &:active {
-    color: #000000;
+    color: #1c3374;
   }
 }
 
@@ -35,7 +35,7 @@
 
   &:hover,
   &:active {
-    border-color: green;
+    border-color: #1c3374;
   }
 }
 
@@ -52,6 +52,7 @@
   width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
+  cursor: pointer;
 }
 
 .button--back {

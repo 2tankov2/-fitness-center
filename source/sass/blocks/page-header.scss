@@ -59,6 +59,10 @@
 .page-header__social-item a {
   color: #ffffff;
   text-transform: uppercase;
+
+  &:hover {
+    color: #1c3374;
+  }
 }
 
 @media (max-width: $tablet-width) {

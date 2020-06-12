@@ -69,6 +69,11 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+
+  &:hover {
+    color: #1c3374;
+    border-bottom-color: #1c3374;
+  }
 }
 
 .ads__photo {

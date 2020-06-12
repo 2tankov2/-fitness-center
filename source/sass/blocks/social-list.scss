@@ -13,6 +13,12 @@
   padding-left: 20px;
 }
 
+.social-list__item svg:hover {
+  path {
+    fill: #ed0233;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .social-list {
     width: 100px;

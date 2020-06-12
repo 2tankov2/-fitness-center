@@ -48,6 +48,11 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+
+  &:hover {
+    color: #ed0233;
+    border-bottom-color: #ed0233;
+  }
 }
 
 @media (max-width: $tablet-width) {
