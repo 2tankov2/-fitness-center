@@ -262,7 +262,7 @@ input[type=radio].visually-hidden {
 }
 
 .button--reviews-back {
-  left: 21.5%;
+  left: -21.5%;
   bottom: 110px;
 }
 
@@ -2292,8 +2292,6 @@ input[type=radio].visually-hidden {
   width: 560px;
   margin: 0 auto;
   background-color: #1c3374;
-  -webkit-box-shadow: 0 0 40px rgba(28,51,116,.2);
-  box-shadow: 0 0 40px rgba(28,51,116,.2);
 }
 
 .reviews__item-info {
@@ -2366,6 +2364,14 @@ input[type=radio].visually-hidden {
   .reviews__item-info p {
     text-align: center;
   }
+}
+
+.swiper-container {
+  width: 560px;
+}
+
+.trainers-swiper-container {
+  width: 1240px;
 }
 
 .free-lesson {

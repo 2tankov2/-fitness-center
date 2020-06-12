@@ -11,6 +11,10 @@
 	<link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/bebasneue_regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/bebasneue_bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="path/to/swiper.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -179,10 +183,10 @@
     </div>
 
     <div class="container container--trainers">
-      <section class="trainers" id="trainers">
+      <section class="trainers trainers-swiper-container" id="trainers">
         <h2>Тренеры</h2>
-        <ul class="trainers-list">
-          <li class="trainers-list__item">
+        <ul class="trainers-list swiper-wrapper">
+          <li class="trainers-list__item swiper-slide">
             <div class="trainers-list__actions">
               <div class="actions-info">
                 <h3>Анна Павлова</h3>
@@ -201,7 +205,7 @@
               </div>
             </div>
           </li>
-          <li class="trainers-list__item">
+          <li class="trainers-list__item swiper-slide">
             <div class="trainers-list__actions">
               <div class="actions-info">
                 <h3>Алексей Лавров</h3>
@@ -220,7 +224,7 @@
               </div>
             </div>
           </li>
-          <li class="trainers-list__item">
+          <li class="trainers-list__item swiper-slide">
             <div class="trainers-list__actions">
               <div class="actions-info">
                 <h3>Александр Пашков</h3>
@@ -239,7 +243,7 @@
               </div>
             </div>
           </li>
-          <li class="trainers-list__item">
+          <li class="trainers-list__item swiper-slide">
             <div class="trainers-list__actions">
               <div class="actions-info">
                 <h3>Мария Кетова</h3>
@@ -261,12 +265,8 @@
             </div>
           </li>
         </ul>
-        <button class="button button--back button--trainers-back" type="button">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="button button--next button--trainers-next" type="button">
-          <span class="visually-hidden">Вперед</span>
-        </button>
+        <div class="swiper-button-prev" type="button"></div>
+        <div class="swiper-button-next" type="button"></div>
       </section>
     </div>
 
@@ -369,21 +369,25 @@
     </div>
 
     <div class="container container--reviews">
-      <section class="reviews">
+      <div class="reviews swiper-container">
         <h2>Отзывы</h2>
-        <div class="reviews__item">
-          <div class="reviews__item-info">
-            <h3>Анна Орлова</h3>
-            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        <div class="swiper-wrapper">
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__item-info">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__item-info">
+              <h3>Светлана Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
           </div>
         </div>
-        <button class="button button--back button--reviews-back" type="button">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button class="button button--next button--reviews-next" type="button">
-          <span class="visually-hidden">Вперед</span>
-        </button>
-      </section>
+        <div class="swiper-button-prev" type="button"></div>
+        <div class="swiper-button-next" type="button"></div>
+      </div>
     </div>
 
     <div class="wrapper wrapper--contacts">
@@ -469,6 +473,9 @@
   </footer>
 
   <script src="https://unpkg.com/imask"></script>
-	<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="path/to/swiper.min.js"></script>
 </body>
 </html>
