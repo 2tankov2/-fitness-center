@@ -2411,6 +2411,12 @@ input[type=radio].visually-hidden {
   padding-bottom: 5px;
 }
 
+.free-lesson__item input:active,
+.free-lesson__item input:focus,
+.free-lesson__item input:hover {
+  outline: 0;
+}
+
 .free-lesson__item input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 16px;

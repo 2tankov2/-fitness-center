@@ -30,6 +30,12 @@
   color: #ffffff;
   background-color: #1c3374;
   padding-bottom: 5px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
 }
 
 .free-lesson__item input::placeholder {
