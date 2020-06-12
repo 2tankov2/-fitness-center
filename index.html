@@ -179,7 +179,7 @@
     </div>
 
     <div class="container container--trainers">
-      <section class="trainers">
+      <section class="trainers" id="trainers">
         <h2>Тренеры</h2>
         <ul class="trainers-list">
           <li class="trainers-list__item">
@@ -276,17 +276,17 @@
           <h2>Наши преимущества</h2>
           <div class="advantages__wrapper">
             <ul class="advantages-list advantages-list--top">
-              <li class="advantages-list__item advantages-list__item--left">
+              <li class="advantages-list__item">
                 <div class="advantages-list__item-amount">
                   <p>900</p>
                   <small>кв/м</small>
                 </div>
                 <div class="advantages-list__item-info">
                   <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                  <p class="advantages-list__item--text">Занимайтесь без очередей и&nbsp;толпучки</p>
                 </div>
               </li>
-              <li class="advantages-list__item advantages-list__item--right">
+              <li class="advantages-list__item">
                 <div class="advantages-list__item-amount">
                   <p>70</p>
                   <small>машин</small>
@@ -305,7 +305,7 @@
             </div>
 
             <ul class="advantages-list">
-              <li class="advantages-list__item advantages-list__item--left">
+              <li class="advantages-list__item">
                 <div class="advantages-list__item-amount">
                   <p>350</p>
                   <small>мест</small>
@@ -315,7 +315,7 @@
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </li>
-              <li class="advantages-list__item advantages-list__item--right">
+              <li class="advantages-list__item">
                 <div class="advantages-list__item-amount">
                   <p>5+</p>
                   <small>лет</small>
@@ -332,7 +332,7 @@
     </div>
 
     <div class="container container--ads">
-      <section class="ads">
+      <section class="ads" id="ads">
         <h2>Акции</h2>
         <div class="ads__row">
           <div class="ads__subscription">
@@ -359,7 +359,7 @@
               </li>
               <li class="ads-list__item">
                 <h3>Скидка 20%</h3>
-                <p>Корпоративный фитнес с командой</p>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
                 <a href="#">Подробнее</a>
               </li>
             </ul>
@@ -409,16 +409,15 @@
               <p>г. Омск, ул. 60 лет Октября, 7</p>
             </li>
 
-            <li class="contacts-list__item contacts-list__item-tel">
+            <li class="contacts-list__item contacts-list__item--tel">
               <h3>Телефон:</h3>
               <a href="tel:+78005555555">8-800-555-55-55</a>
             </li>
-            <li class="contacts-list__item cotacts-list__item--time">
+            <li class="contacts-list__item contacts-list__item--time">
               <h3>График работы:</h3>
               <p>Пн-Вс: с 8:00 до 22:00</p>
-            </li>
 
-            <li class="contacts-list__item">
+            </li><li class="contacts-list__item contacts-list__item--mail">
               <h3>Email:</h3>
               <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
             </li>
@@ -433,9 +432,9 @@
       <a href="#" class="page-footer__logo-link">Supergym</a>
       <nav class="page-footer__menu">
         <a href="#">Услуги</a>
-        <a href="#">Абонементы</a>
-        <a href="#">Акции</a>
-        <a href="#">Тренеры</a>
+        <a href="#subscription">Абонементы</a>
+        <a href="#ads">Акции</a>
+        <a href="#trainers">Тренеры</a>
         <a href="#">Расписание</a>
       </nav>
       <ul class="social-list">
@@ -468,5 +467,8 @@
       </ul>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/imask"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
