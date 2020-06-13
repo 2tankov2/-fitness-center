@@ -3,6 +3,26 @@
 }
 
 .trainers-swiper-container {
-  width: 100%;
+  width: 1160px;
+}
+
+@media (max-width: $tablet-width) {
+  .swiper-container {
+    width: 566px;
+  }
+
+  .trainers-swiper-container {
+    width: 566px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .swiper-container {
+    width: 226px;
+  }
+
+  .trainers-swiper-container {
+    width: 226px;
+  }
 }
 

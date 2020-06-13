@@ -83,14 +83,6 @@
   .trainers-list__item {
     width: 268px;
     margin-right: 4.5%;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    &:nth-child(n+3) {
-      display: none;
-    }
   }
 
   .trainers-list__profile-image img {
@@ -102,10 +94,6 @@
   .trainers-list__item {
     width: 226px;
     margin: 0 auto;
-
-    &:nth-child(n+2) {
-      display: none;
-    }
   }
 
   .trainers-list__profile {

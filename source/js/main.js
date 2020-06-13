@@ -16,35 +16,38 @@
 window.onload = function () {
   var trainersSwiper = new Swiper ('.trainers-swiper-container', {
     // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: getPerViews(),
-    /*slidesPerView: 4,*/
-    slidesPerGroup: 4,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 0,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 40
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.button--trainers-next',
       prevEl: '.button--trainers-back',
     },
-    on: {
-      resize: function () {
-        trainersSwiper.update(getPerViews());
-      }
-    }
   });
 
-  function getPerViews() {
-    var windowWidth = window.innerWidth;
-    var slidesPerView = windowWidth <= 768 ? 2 : 4;
-
-    return slidesPerView;
-  }
-
   var reviewsSwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    effect: 'flip',
-    grabCursor: true,
+    // Optional parameter
     direction: 'horizontal',
     loop: true,
     pagination: {
