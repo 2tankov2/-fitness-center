@@ -5,16 +5,11 @@
   align-items: center;
 }
 
-.reviews h2 {
-  padding-bottom: 54px;
-}
-
 .reviews__item {
   width: 560px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: #1c3374;
 }
 
 .reviews__item-info {
@@ -23,7 +18,9 @@
   color: #ffffff;
   padding-top: 54px;
   padding-left: 170px;
+  padding-right: 63px;
   padding-bottom: 57px;
+  background-color: #1c3374;
 
   &::before {
     content: "";
