@@ -237,12 +237,18 @@ input[type=radio].visually-hidden {
   border: 0;
   padding: 0;
   border-bottom: 1px solid #afafaf;
+  z-index: 1;
 }
 
 .button--back {
   border-left: 1px solid #afafaf;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.button--back:hover,
+.button--next:hover {
+  background-color: transparent;
 }
 
 .button--next {
@@ -262,12 +268,12 @@ input[type=radio].visually-hidden {
 }
 
 .button--reviews-back {
-  left: 21.5%;
+  left: -21.5%;
   bottom: 110px;
 }
 
 .button--reviews-next {
-  right: 21.5%;
+  right: -21.5%;
   bottom: 110px;
 }
 
@@ -505,6 +511,11 @@ input[type=radio].visually-hidden {
 
 .container--reviews {
   padding-bottom: 120px;
+}
+
+.container--reviews h2 {
+  padding-bottom: 54px;
+  text-align: center;
 }
 
 .container--form {
@@ -1554,10 +1565,6 @@ input[type=radio].visually-hidden {
   margin-right: 3.5%;
 }
 
-.trainers-list__item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .trainers-list__item:focus .trainers-list__actions,
 .trainers-list__item:hover .trainers-list__actions {
   display: block;
@@ -1569,16 +1576,17 @@ input[type=radio].visually-hidden {
 }
 
 .trainers-list__actions {
-  width: 100%;
+  width: 260px;
   height: 100%;
   display: none;
   position: absolute;
   background-image: url("../img/actions.png");
+  margin-right: 3.5%;
 }
 
 .trainers-list__profile {
   position: relative;
-  width: 100%;
+  width: 260px;
   height: 294px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1589,6 +1597,7 @@ input[type=radio].visually-hidden {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  margin-right: 3.5%;
 }
 
 .trainers-list__profile p {
@@ -2284,25 +2293,17 @@ input[type=radio].visually-hidden {
   align-items: center;
 }
 
-.reviews h2 {
-  padding-bottom: 54px;
-}
-
 .reviews__item {
   width: 560px;
   margin: 0 auto;
-  background-color: #1c3374;
-  -webkit-box-shadow: 0 0 40px rgba(28,51,116,.2);
-  box-shadow: 0 0 40px rgba(28,51,116,.2);
 }
 
 .reviews__item-info {
   position: relative;
   width: 328px;
   color: #fff;
-  padding-top: 54px;
-  padding-left: 170px;
-  padding-bottom: 57px;
+  padding: 54px 63px 57px 170px;
+  background-color: #1c3374;
 }
 
 .reviews__item-info::before {
@@ -2366,6 +2367,14 @@ input[type=radio].visually-hidden {
   .reviews__item-info p {
     text-align: center;
   }
+}
+
+.swiper-container {
+  width: 560px;
+}
+
+.trainers-swiper-container {
+  width: 100%;
 }
 
 .free-lesson {
