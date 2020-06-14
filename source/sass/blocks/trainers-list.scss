@@ -1,4 +1,4 @@
-.trainers-list {
+/*.trainers-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 .trainers-list__item {
   position: relative;
@@ -75,10 +75,10 @@
 }
 
 @media (max-width: $tablet-width) {
-  .trainers-list {
+  /*.trainers-list {
     width: 83.5%;
     margin: 0 auto;
-  }
+  }*/
 
   .trainers-list__item {
     width: 268px;

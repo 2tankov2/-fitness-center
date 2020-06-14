@@ -11,13 +11,60 @@
 
   window.IMask(orderPhone, maskOptions);
 
+  /* переключение абонементов */
+  var subscription = document.querySelector('.subscription');
+  var btnMonths = subscription.querySelectorAll('.months-list__button');
+  var listSub = subscription.querySelectorAll('.catalog');
+
+  function dataid() {
+    for (let i = 0; i < btnMonths.length; i++) {
+      btnMonths[i].setAttribute('data-id', i);
+      listSub[i].setAttribute('data-id', i);
+    }
+  }
+
+  dataid();
+
+  function showHide(b) {
+    btnMonths.forEach((btn) => {
+      if (btn.getAttribute('data-id') !== b) {
+        btn.classList.remove('months-list__button--active');
+      }
+    });
+    listSub.forEach((item) => {
+      if (item.getAttribute('data-id') !== b) {
+        item.classList.add('catalog--closed');
+      } else {
+        item.classList.remove('catalog--closed');
+      }
+    });
+  }
+
+  function whereTab(event) {
+    let target = event.target;
+    if (target.className === 'months-list__button') {
+      let attrItem = target.getAttribute('data-id');
+      target.classList.add('months-list__button--active');
+      showHide(attrItem);
+    }
+  }
+
+  subscription.addEventListener('click', whereTab);
+  subscription.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 9) {
+      whereTab(evt);
+    }
+  });
 }());
+
 
 window.onload = function () {
   var trainersSwiper = new Swiper ('.trainers-swiper-container', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 0,
+    scrollbarHide: false,
+    scrollbarDraggable: true,
 
     breakpoints: {
       // when window width is >= 320px

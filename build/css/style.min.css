@@ -1112,7 +1112,7 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 12px;
+  padding: 0;
   border-bottom: 2px solid rgba(120,120,120,.2);
 }
 
@@ -1127,12 +1127,15 @@ input[type=radio].visually-hidden {
   padding-right: 0;
 }
 
-.months-list__item a {
+.months-list__button {
+  border: 0;
+  background-color: transparent;
   color: rgba(16,38,84,.5);
-  padding-bottom: 13px;
+  padding-bottom: 15px;
+  margin: 0;
 }
 
-.months-list__item--active a {
+.months-list__button--active {
   border-bottom: 2px solid #d10a42;
   color: #102654;
 }
@@ -1525,8 +1528,18 @@ input[type=radio].visually-hidden {
 }
 
 .trainers {
-  width: 100%;
+  width: 1160px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .trainers h2 {
@@ -1557,19 +1570,6 @@ input[type=radio].visually-hidden {
   .trainers h2 {
     padding-bottom: 44px;
   }
-}
-
-.trainers-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .trainers-list__item {
@@ -1640,11 +1640,6 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:1199px) {
-  .trainers-list {
-    width: 83.5%;
-    margin: 0 auto;
-  }
-
   .trainers-list__item {
     width: 268px;
     margin-right: 4.5%;
