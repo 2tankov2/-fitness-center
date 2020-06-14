@@ -48,28 +48,12 @@
       showHide(attrItem);
     }
   }
-/*
-  function whereTab() {
-    let el = document.activeElement;
-    if (el.className === 'months-list__button') {
-      let attrItem = el.getAttribute('data-id');
-      el.classList.add('months-list__button--active');
-      showHide(attrItem);
-    }
-  }
-*/
+
   subscription.addEventListener('click', whereTab);
-/*  subscription.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 9) {
-      whereTab();
-    }
-  });
-*/
   subscription.addEventListener('focus', function (evt) {
     whereTab(evt);
   }, true);
 }());
-
 
 window.onload = function () {
   var trainersSwiper = new Swiper ('.trainers-swiper-container', {
@@ -110,6 +94,8 @@ window.onload = function () {
     // Optional parameter
     direction: 'horizontal',
     loop: true,
+    effect: 'flip',
+    grabCursor: true,
     pagination: {
       el: '.swiper-pagination',
     },

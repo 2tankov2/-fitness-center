@@ -55,7 +55,6 @@
   }, true);
 }());
 
-
 window.onload = function () {
   var trainersSwiper = new Swiper ('.trainers-swiper-container', {
     // Optional parameters
@@ -95,6 +94,8 @@ window.onload = function () {
     // Optional parameter
     direction: 'horizontal',
     loop: true,
+    effect: 'flip',
+    grabCursor: true,
     pagination: {
       el: '.swiper-pagination',
     },
