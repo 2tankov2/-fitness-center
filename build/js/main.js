@@ -40,21 +40,34 @@
     });
   }
 
-  function whereTab(event) {
-    let target = event.target;
+  function whereTab(evt) {
+    let target = evt.target;
     if (target.className === 'months-list__button') {
       let attrItem = target.getAttribute('data-id');
       target.classList.add('months-list__button--active');
       showHide(attrItem);
     }
   }
-
+/*
+  function whereTab() {
+    let el = document.activeElement;
+    if (el.className === 'months-list__button') {
+      let attrItem = el.getAttribute('data-id');
+      el.classList.add('months-list__button--active');
+      showHide(attrItem);
+    }
+  }
+*/
   subscription.addEventListener('click', whereTab);
-  subscription.addEventListener('keydown', function (evt) {
+/*  subscription.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 9) {
-      whereTab(evt);
+      whereTab();
     }
   });
+*/
+  subscription.addEventListener('focus', function (evt) {
+    whereTab(evt);
+  }, true);
 }());
 
 

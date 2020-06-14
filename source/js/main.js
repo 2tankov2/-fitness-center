@@ -40,8 +40,8 @@
     });
   }
 
-  function whereTab(event) {
-    let target = event.target;
+  function whereTab(evt) {
+    let target = evt.target;
     if (target.className === 'months-list__button') {
       let attrItem = target.getAttribute('data-id');
       target.classList.add('months-list__button--active');
@@ -50,11 +50,9 @@
   }
 
   subscription.addEventListener('click', whereTab);
-  subscription.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 9) {
-      whereTab(evt);
-    }
-  });
+  subscription.addEventListener('focus', function (evt) {
+    whereTab(evt);
+  }, true);
 }());
 
 
