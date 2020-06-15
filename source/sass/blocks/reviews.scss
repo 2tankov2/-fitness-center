@@ -62,7 +62,8 @@
 
   .reviews__item-info {
     width: 176px;
-    padding-left: 0;
+    padding-left: calc(50vw - 135px);
+    padding-right: calc(50vw - 135px);
     padding-top: 50px;
     padding-bottom: 34px;
     margin: 0 auto;

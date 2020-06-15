@@ -139,4 +139,9 @@
   .ads__info-text {
     padding-bottom: 30px;
   }
+
+  .ads__photo img {
+    width: 100%;
+    object-fit: contain;
+  }
 }

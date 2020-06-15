@@ -80,7 +80,7 @@ window.onload = function () {
       1200: {
         slidesPerView: 4,
         slidesPerGroup: 4,
-        spaceBetween: 50
+        spaceBetween: 40
       },
     },
     // Navigation arrows
