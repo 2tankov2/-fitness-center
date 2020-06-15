@@ -2109,10 +2109,6 @@ input[type=radio].visually-hidden {
   border-bottom-color: #1c3374;
 }
 
-.ads__photo {
-  width: 50%;
-}
-
 .ads__photo img {
   height: 100%;
   -o-object-fit: cover;
@@ -2147,12 +2143,6 @@ input[type=radio].visually-hidden {
   .ads__info {
     width: 34.7%;
     padding-left: 6.5%;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-  }
-
-  .ads__photo {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -2368,10 +2358,7 @@ input[type=radio].visually-hidden {
 
   .reviews__item-info {
     width: 176px;
-    padding-left: calc(50vw - 135px);
-    padding-right: calc(50vw - 135px);
-    padding-top: 50px;
-    padding-bottom: 34px;
+    padding: 50px 20px 34px;
     margin: 0 auto;
   }
 
@@ -2668,7 +2655,7 @@ input[type=radio].visually-hidden {
 
   .contacts-list__item {
     width: 218px;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-left: 0;
     padding-bottom: 28px;
   }
