@@ -37,7 +37,7 @@
   display: none;
   position: absolute;
   background-image: url("../../img/actions.png");
-  margin-right: 3.5%;
+  /*margin-right: 3.5%;*/
 }
 
 .trainers-list__profile {
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-right: 3.5%;
+  /*margin-right: 3.5%;*/
 }
 
 .trainers-list__profile p {
@@ -68,7 +68,7 @@
 }
 
 .trainers-list__profile-image img {
-  object-fit: cover;
+  object-fit: contain;
   object-position: bottom;
   height: 294px;
   width: 268px;

@@ -3,7 +3,17 @@
 }
 
 .trainers-swiper-container {
-  width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media (max-width: $tablet-width) {
@@ -22,7 +32,11 @@
   }
 
   .trainers-swiper-container {
-    width: 226px;
+    width: 266px;
+  }
+
+  .swiper-slide {
+    align-items: center;
   }
 }
 
