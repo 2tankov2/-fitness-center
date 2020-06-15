@@ -258,12 +258,12 @@ input[type=radio].visually-hidden {
 }
 
 .button--trainers-back {
-  left: -51px;
+  left: 5px;
   bottom: 135px;
 }
 
 .button--trainers-next {
-  right: -51px;
+  right: 5px;
   bottom: 135px;
 }
 
@@ -495,7 +495,14 @@ input[type=radio].visually-hidden {
 }
 
 .container--trainers {
+  width: 93%;
   padding-bottom: 120px;
+}
+
+.container--reviews h2,
+.container--trainers h2 {
+  padding-bottom: 54px;
+  text-align: center;
 }
 
 .container--advantages {
@@ -511,11 +518,6 @@ input[type=radio].visually-hidden {
 
 .container--reviews {
   padding-bottom: 120px;
-}
-
-.container--reviews h2 {
-  padding-bottom: 54px;
-  text-align: center;
 }
 
 .container--form {
@@ -1528,7 +1530,6 @@ input[type=radio].visually-hidden {
 }
 
 .trainers {
-  width: 1160px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1596,7 +1597,6 @@ input[type=radio].visually-hidden {
   display: none;
   position: absolute;
   background-image: url("../img/actions.png");
-  margin-right: 3.5%;
 }
 
 .trainers-list__profile {
@@ -1612,7 +1612,6 @@ input[type=radio].visually-hidden {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-right: 3.5%;
 }
 
 .trainers-list__profile p {
@@ -1631,8 +1630,8 @@ input[type=radio].visually-hidden {
 }
 
 .trainers-list__profile-image img {
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   -o-object-position: bottom;
   object-position: bottom;
   height: 294px;
@@ -2369,7 +2368,18 @@ input[type=radio].visually-hidden {
 }
 
 .trainers-swiper-container {
-  width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 40px;
 }
 
 @media (max-width:1199px) {
@@ -2380,9 +2390,18 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width:767px) {
-  .swiper-container,
-  .trainers-swiper-container {
+  .swiper-container {
     width: 226px;
+  }
+
+  .trainers-swiper-container {
+    width: 266px;
+  }
+
+  .swiper-slide {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
