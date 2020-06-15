@@ -3,7 +3,7 @@
 }
 
 .trainers-swiper-container {
-  width: 100%;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -12,8 +12,19 @@
   padding: 0;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 40px;
+  justify-content: center;
+}
+
+.trainers-swiper-container .swiper-wrapper {
+  width: 92%;
+  margin: 0 auto;
+
+
+}
+
+.trainers-swiper-container .swiper-wrapper div {
+  flex-grow: 0;
+  flex-shrink: 1;
 }
 
 @media (max-width: $tablet-width) {
@@ -22,7 +33,9 @@
   }
 
   .trainers-swiper-container {
-    width: 566px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 626px;
   }
 }
 
@@ -35,8 +48,8 @@
     width: 266px;
   }
 
-  .swiper-slide {
-    align-items: center;
+  .trainers-swiper-container .swiper-wrapper div {
+    flex-shrink: 0;
   }
 }
 

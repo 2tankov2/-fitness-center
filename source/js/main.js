@@ -61,20 +61,22 @@ window.onload = function () {
     slidesPerView: 4,
     spaceBetween: 40,
     slidesPerGroup: 4,
-    loop: true,
 
     breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 10,
+        spaceBetween: 20,
+        autoHeight: true,
+        /*slidesOffsetBefore: 20,*/
       },
       // when window width is >= 768px
       768: {
         slidesPerView: 2,
         slidesPerGroup: 2,
         spaceBetween: 30,
+        /*slidesOffsetBefore: 30,*/
       },
       // when window width is >= 1200px
       1200: {

@@ -13,7 +13,7 @@
   width: 260px;
   max-height: 294px;
   color: #ffffff;
-  margin-right: 3.5%;
+  flex-shrink: 1;
 /*
   &:nth-child(4n) {
     margin-right: 0;
@@ -82,11 +82,19 @@
 
   .trainers-list__item {
     width: 268px;
-    margin-right: 4.5%;
+    height: 294px;
+    flex-shrink: 1;
+  }
+
+  .trainers-list__profile {
+    height: 294px;
+    width: 268px;
   }
 
   .trainers-list__profile-image img {
     width: 268px;
+    height: 294px;
+    object-fit: cover;
   }
 }
 
@@ -98,10 +106,16 @@
 
   .trainers-list__profile {
     height: 274px;
+    width: 226px;
   }
 
   .trainers-list__profile-image img {
     width: 226px;
     height: 274px;
+    object-fit: cover;
+  }
+
+  .trainers-list__actions {
+    width: 226px;
   }
 }
