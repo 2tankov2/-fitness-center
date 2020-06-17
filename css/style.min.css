@@ -258,12 +258,12 @@ input[type=radio].visually-hidden {
 }
 
 .button--trainers-back {
-  left: 5px;
+  left: -4%;
   bottom: 135px;
 }
 
 .button--trainers-next {
-  right: 5px;
+  right: -4%;
   bottom: 135px;
 }
 
@@ -301,14 +301,6 @@ input[type=radio].visually-hidden {
     padding-bottom: 13px;
     font-size: 10px;
     line-height: 12px;
-  }
-
-  .button--trainers-back {
-    left: 4px;
-  }
-
-  .button--trainers-next {
-    right: 4px;
   }
 
   .button--reviews-back {
@@ -502,7 +494,7 @@ input[type=radio].visually-hidden {
 }
 
 .container--trainers {
-  width: 93%;
+  width: 85%;
   padding-bottom: 120px;
 }
 
@@ -1345,6 +1337,9 @@ input[type=radio].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .promo__info {
@@ -1352,10 +1347,6 @@ input[type=radio].visually-hidden {
   padding-top: 80px;
   background-color: #ed0233;
   color: #fff;
-}
-
-.promo__info,
-.promo__photo {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -1374,9 +1365,6 @@ input[type=radio].visually-hidden {
 
   .promo__photo {
     max-height: 292px;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
   }
 }
 
@@ -1471,7 +1459,6 @@ input[type=radio].visually-hidden {
   left: 0;
 }
 
-.advantages-list--top .advantages-list__item,
 .info__date,
 .info__time {
   position: relative;
@@ -1537,6 +1524,7 @@ input[type=radio].visually-hidden {
 }
 
 .trainers {
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1548,6 +1536,10 @@ input[type=radio].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .trainers h2 {
@@ -1580,13 +1572,30 @@ input[type=radio].visually-hidden {
   }
 }
 
+.trainers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
 .trainers-list__item {
   position: relative;
   width: 260px;
   max-height: 294px;
   color: #fff;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
+  margin-right: 3.5%;
+}
+
+.trainers-list__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .trainers-list__item:focus .trainers-list__actions,
@@ -1596,6 +1605,10 @@ input[type=radio].visually-hidden {
 
 .trainers-list__item:focus .trainers-list__profile p,
 .trainers-list__item:hover .trainers-list__profile p {
+  display: none;
+}
+
+.trainers-list__item--closed {
   display: none;
 }
 
@@ -1609,7 +1622,7 @@ input[type=radio].visually-hidden {
 
 .trainers-list__profile {
   position: relative;
-  width: 260px;
+  width: 100%;
   height: 294px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1822,7 +1835,7 @@ input[type=radio].visually-hidden {
 
   .advantages__center {
     position: relative;
-    width: 442px;
+    width: 63.3%;
     left: 0;
     margin: 0 auto 45px;
   }
@@ -1878,6 +1891,10 @@ input[type=radio].visually-hidden {
   margin-bottom: 158px;
 }
 
+.advantages-list--top .advantages-list__item {
+  position: relative;
+}
+
 .advantages-list--top .advantages-list__item::before {
   position: absolute;
   content: "";
@@ -1891,9 +1908,6 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 33.7%;
 }
 
@@ -2060,6 +2074,9 @@ input[type=radio].visually-hidden {
 .ads__subscription {
   width: 48.3%;
   margin-right: 3.4%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .ads__info {
@@ -2069,9 +2086,6 @@ input[type=radio].visually-hidden {
   padding-bottom: 45px;
   background-color: #ed0233;
   color: #fff;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .ads__info-date,
@@ -2143,9 +2157,6 @@ input[type=radio].visually-hidden {
   .ads__info {
     width: 34.7%;
     padding-left: 6.5%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
   }
 }
 
@@ -2519,8 +2530,20 @@ input[type=radio].visually-hidden {
 
 @media (max-width:1199px) {
   .free-lesson {
-    width: 472px;
-    padding-left: 133px;
+    width: 535px;
+    padding-left: 0;
+    padding-right: 30px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .free-lesson h2 {
@@ -2571,10 +2594,21 @@ input[type=radio].visually-hidden {
 
 @media (max-width:1199px) {
   .contacts {
-    width: 69.3%;
-    padding-left: 133px;
+    width: 565px;
+    padding-left: 0;
     padding-top: 67px;
     padding-bottom: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .contacts h2 {
