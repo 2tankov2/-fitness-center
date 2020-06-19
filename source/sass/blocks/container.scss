@@ -19,8 +19,7 @@
 }
 
 .container--gym {
-  width: 76%;
-  margin-top: 166px;
+  margin-top: 120px;
   margin-bottom: 117px;
 }
 
@@ -35,13 +34,12 @@
 }
 
 .container--trainers {
-  width: 93%;
+  width: 85%;
   padding-bottom: 120px;
 }
 
 .container--trainers h2 {
   padding-bottom: 54px;
-  text-align: center;
 }
 
 .container--advantages {
@@ -84,7 +82,7 @@
 
 @media (max-width: $tablet-width) {
   .container {
-    width: 88.3%;
+    width: 678px;
   }
 
   .container h2 {
@@ -115,8 +113,12 @@
     padding-bottom: 100px;
   }
 
+  .container--trainers h2 {
+    padding-bottom: 41px;
+    text-align: center;
+  }
+
   .container--advantages {
-    width: 88%;
     padding-top: 98px;
     padding-bottom: 95px;
   }
@@ -130,11 +132,11 @@
     padding-bottom: 100px;
   }
 
-  .container--form {
-    width: 100%;
+  .container--reviews h2 {
+    padding-bottom: 43px;
   }
 
-  .container--contacts {
+  .container--form {
     width: 100%;
   }
 
@@ -145,7 +147,7 @@
 
 @media (max-width: $mobile-width) {
   .container {
-    width: 91%;
+    width: 290px;
   }
 
   .container h2 {
@@ -178,6 +180,10 @@
     padding-bottom: 70px;
   }
 
+  .container--trainers h2 {
+    padding-bottom: 44px;
+  }
+
   .container--advantages {
     width: 100%;
     padding-top: 68px;
@@ -193,12 +199,16 @@
     padding-bottom: 69px;
   }
 
+  .container--reviews h2 {
+    padding-bottom: 45px;
+  }
+
   .container--form {
     width: 100%;
   }
 
   .container--contacts {
-    width: 100%;
+    width: 290px;
   }
 
   .container--footer {

@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.info--gym {
+  width: 76%;
+  padding-right: 30px;
+}
+
 .info__section {
   display: flex;
   align-items: center;
@@ -87,6 +92,12 @@
 }
 
 @media (max-width: $tablet-width) {
+  .info--gym {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
   .info__section h2 {
     font-size: 52px;
     line-height: 52px;
@@ -120,5 +131,10 @@
 @media (max-width: $mobile-width) {
   .info {
     padding-bottom: 50px;
+  }
+
+  .info--gym {
+    text-align: start;
+    padding-bottom: 0;
   }
 }

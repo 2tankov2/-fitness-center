@@ -2,24 +2,22 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.gym h2 {
+.gym__info {
+  width: 43.1%;
+  padding-bottom: 132px;
+  flex-grow: 1;
+  padding-top: 45px;
+}
+
+.gym__info h2 {
   text-transform: uppercase;
   font-family: "bebas_neue", "Arial", cursive;
 
   color: #102654;
-}
-
-.gym__container {
-  display: flex;
-  margin-top: 13px;
-}
-
-.gym__info {
-  width: 34%;
-  padding-bottom: 132px;
+  padding-bottom: 13px;
 }
 
 .gym__info h3 {
@@ -46,7 +44,6 @@
 }
 
 .gym__video {
-  position: relative;
   width: 660px;
   background-image: url("../../img/gym-desktop.jpg");
   background-size: contain;
@@ -58,9 +55,13 @@
   }
 }
 
-.gym__video img {
-  padding-top: 180px;
-  padding-left: 23px;
+.gym__video-image {
+  position: relative;
+}
+
+.gym__video-image img {
+  padding-top: 288px;
+  margin-left: -65px;
 }
 
 .gym__video-play img {
@@ -69,11 +70,13 @@
 
 .gym__video-play {
   position: absolute;
+  width: 100px;
+  height: 100px;
   border: 0;
   padding: 0;
   background-color: transparent;
   bottom: 65px;
-  left: 155px;
+  left: 102px;
   outline: none;
 
   &:hover {
@@ -89,12 +92,13 @@
 @media (max-width: $tablet-width) {
   .gym {
     align-items: center;
-  }
-
-  .gym__container {
     flex-direction: column;
   }
 
+/*  .gym__container {
+    flex-direction: column;
+  }
+*/
   .gym__info {
     width: 74%;
     margin: 0 auto;
@@ -102,6 +106,7 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 37px;
+    padding-top: 0;
   }
 
   .gym__info h3 {
@@ -132,16 +137,16 @@
     }
   }
 
-  .gym__video img {
+  .gym__video-image img {
     padding-top: 260px;
-    padding-left: 0;
+    margin-left: 0;
   }
 
   .gym__video-play {
     width: 73px;
     height: 73px;
     bottom: 11.5%;
-    left: 44.5%;
+    left: 35%;
   }
 
   .gym__video-play img {
@@ -154,20 +159,15 @@
     align-items: flex-start;
   }
 
-  .gym h2 {
-    padding-left: 5%;
-  }
-
-  .gym__container {
-    width: 100%;
-    margin-top: 11px;
-  }
-
   .gym__info {
-    width: 91%;
+    width: 290px;
     margin: 0 auto;
     align-items: flex-start;
     padding-bottom: 26px;
+  }
+
+  .gym__info h2 {
+    padding-bottom: 11px;
   }
 
   .gym__info h3 {
@@ -193,7 +193,7 @@
     }
   }
 
-  .gym__video img {
+  .gym__video-image img {
     padding-top: 353px;
   }
 

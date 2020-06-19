@@ -52,7 +52,7 @@
   width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
-  cursor: pointer;
+  color: #ffffff;
 }
 
 .button--back {
@@ -88,23 +88,23 @@
 }
 
 .button--trainers-back {
-  left: 5px;
+  left: -4%;
   bottom: 135px;
 }
 
 .button--trainers-next {
-  right: 5px;
+  right: -4%;
   bottom: 135px;
 }
 
 .button--reviews-back {
-  left: -21.5%;
-  bottom: 110px;
+  left: -9%;
+  bottom: 45%;
 }
 
 .button--reviews-next {
-  right: -21.5%;
-  bottom: 110px;
+  right: -9%;
+  bottom: 45%;
 }
 
 .button--form {
@@ -134,11 +134,11 @@
   }
 
   .button--trainers-back {
-    left: 4px;
+    left: 5px;
   }
 
   .button--trainers-next {
-    right: 4px;
+    right: 5px;
   }
 
   .button--reviews-back {
@@ -178,5 +178,9 @@
     bottom: 159px;
     width: 17px;
     height: 17px;
+  }
+
+  .button--form {
+    width: 100%;
   }
 }

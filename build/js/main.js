@@ -55,43 +55,77 @@
   }, true);
 }());
 
-window.onload = function () {
-  var trainersSwiper = new Swiper ('.trainers-swiper-container', {
-    // Optional parameters
-    slidesPerView: 4,
-    spaceBetween: 40,
-    slidesPerGroup: 4,
+// слайдер блока <тренеры>
+var sectionTrainers = document.querySelector('.trainers');
+var trainers = sectionTrainers.querySelectorAll('.trainers-list__item');
+var btnPrev = sectionTrainers.querySelector('.button--trainers-back');
+var btnNext = sectionTrainers.querySelector('.button--trainers-next');
 
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 20,
-        autoHeight: true,
-        /*slidesOffsetBefore: 20,*/
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-        /*slidesOffsetBefore: 30,*/
-      },
-      // when window width is >= 1200px
-      1200: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 40
-      },
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.button--trainers-next',
-      prevEl: '.button--trainers-back',
-    },
+function viewBlock(index) {
+  trainers.forEach((item, i) => {
+    if (i >= index) {
+      item.classList.add('trainers-list__item--closed');
+    } else {
+      item.classList.remove('trainers-list__item--closed');
+    }
   });
+}
 
+if (window.screen.width < 768) {
+  viewBlock(1);
+} else if (window.screen.width < 1200) {
+  viewBlock(2);
+} else if (window.screen.width >= 1200) {
+  viewBlock(4);
+}
+
+function viewBlock2(i, count) {
+  trainers.forEach((item, index) => {
+    if (index < i || (index >= (i + count))) {
+      item.classList.add('trainers-list__item--closed');
+    } else {
+      item.classList.remove('trainers-list__item--closed');
+    }
+  });
+}
+
+let currentTrainer = 0;
+
+btnNext.onclick = function () {
+  let i = currentTrainer;
+  if (trainers.length > i) {
+    if (window.screen.width < 768 && (i < trainers.length - 1 && i < currentTrainer + 1)) {
+      i++;
+      viewBlock2(i, 1);
+    } else if (window.screen.width < 1200 && (i < trainers.length - 2 && i < currentTrainer + 2)) {
+      i = i + 2;
+      viewBlock2(i, 2);
+    } else if (window.screen.width >= 1200 && (i < trainers.length - 4 && i < currentTrainer + 4)) {
+      i = i + 4;
+      viewBlock2(i, 4);
+    }
+  }
+  currentTrainer = i;
+};
+
+btnPrev.onclick = function () {
+  let i = currentTrainer;
+  if (i > 0) {
+    if (window.screen.width < 768 && (i >= 1)) {
+      i--;
+      viewBlock2(i, 1);
+    } else if (window.screen.width < 1200 && (i >= 2)) {
+      i = i - 2;
+      viewBlock2(i, 2);
+    } else if (window.screen.width >= 1200 && (i >= 4)) {
+      i = i - 4;
+      viewBlock2(i, 4);
+    }
+  }
+  currentTrainer = i;
+};
+
+window.onload = function () {
   var reviewsSwiper = new Swiper ('.swiper-container', {
     // Optional parameter
     direction: 'horizontal',
@@ -108,4 +142,19 @@ window.onload = function () {
       prevEl: '.button--reviews-back',
     },
   });
+
 };
+
+// одинаковая высота слайдов Swiper при увеличении контента внутри слайдов
+var sliders = document.querySelectorAll('.reviews__item');
+const wrapper = document.querySelector('.swiper-wrapper');
+
+sliders.forEach((slide) => {
+  slide.style.height = '';
+});
+
+setTimeout(() => {
+  sliders.forEach((slide) => {
+    slide.style.height = wrapper.clientHeight + 'px';
+  });
+}, 300);

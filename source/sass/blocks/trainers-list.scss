@@ -1,4 +1,4 @@
-/*.trainers-list {
+.trainers-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -6,116 +6,55 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-}*/
+  overflow: hidden;
+}
 
 .trainers-list__item {
   position: relative;
   width: 260px;
   max-height: 294px;
   color: #ffffff;
-  flex-shrink: 1;
-/*
-  &:nth-child(4n) {
-    margin-right: 0;
-  }*/
+  justify-content: space-between;
 
   &:hover,
   &:focus {
-    .trainers-list__actions {
+    .actions {
       display: block;
     }
 
-    .trainers-list__profile p {
+    .profile p {
       display: none;
     }
   }
 }
 
-.trainers-list__actions {
-  width: 260px;
-  height: 100%;
+.trainers-list__item--closed {
   display: none;
-  position: absolute;
-  background-image: url("../../img/actions.png");
-  /*margin-right: 3.5%;*/
 }
 
-.trainers-list__profile {
-  position: relative;
-  width: 260px;
-  height: 294px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  /*margin-right: 3.5%;*/
-}
-
-.trainers-list__profile p {
-
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 150%;
-
-  margin: 0;
-  padding-bottom: 25px;
-}
-
-.trainers-list__profile-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.trainers-list__profile-image img {
-  object-fit: contain;
-  object-position: bottom;
-  height: 294px;
-  width: 268px;
-}
 
 @media (max-width: $tablet-width) {
-  /*.trainers-list {
-    width: 83.5%;
+  .trainers-list {
+    width: 566px;
     margin: 0 auto;
-  }*/
+  }
 
   .trainers-list__item {
     width: 268px;
     height: 294px;
     flex-shrink: 1;
-  }
-
-  .trainers-list__profile {
-    height: 294px;
-    width: 268px;
-  }
-
-  .trainers-list__profile-image img {
-    width: 268px;
-    height: 294px;
-    object-fit: cover;
+    margin: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .trainers-list {
+    width: 226px;
+  }
+
   .trainers-list__item {
     width: 226px;
+    height: 274px;
     margin: 0 auto;
-  }
-
-  .trainers-list__profile {
-    height: 274px;
-    width: 226px;
-  }
-
-  .trainers-list__profile-image img {
-    width: 226px;
-    height: 274px;
-    object-fit: cover;
-  }
-
-  .trainers-list__actions {
-    width: 226px;
   }
 }

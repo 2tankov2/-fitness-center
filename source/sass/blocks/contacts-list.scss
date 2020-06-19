@@ -49,15 +49,19 @@
 }
 
 @media (max-width: $tablet-width) {
+  .contacts-list {
+    justify-content: start;
+  }
+
   .contacts-list::before {
-    width: 24%;
+    width: 19%;
     top: 67px;
     left: 202px;
   }
 
   .contacts-list__item {
     width: 218px;
-    padding-right: 40px;
+    padding-right: 14%;
 
     padding-left: 0;
     padding-bottom: 28px;

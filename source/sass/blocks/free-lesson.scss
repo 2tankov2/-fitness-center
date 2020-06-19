@@ -46,29 +46,47 @@
 
 @media (max-width: $tablet-width) {
   .free-lesson {
-    width: 472px;
-    padding-left: 133px;
+    width: 592px;
+    padding-left: 86px;
+    padding-right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .free-lesson h2 {
     padding-bottom: 37px;
   }
 
+  .free-lesson form {
+    width: 472px;
+  }
+
   .free-lesson__item {
     width: 100%;
     padding-bottom: 27px;
+    justify-content: start;
   }
 
   .free-lesson__item input {
-    width: 43%;
+    width: 45%;
+  }
+
+  .free-lesson__item input[type="text"] {
+    margin-right: 60px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .free-lesson {
-    width: 91%;
+    width: 290px;
     margin: 0 auto;
     padding-left: 0;
+  }
+
+  .free-lesson form {
+    width: 100%;
   }
 
   .free-lesson__item {

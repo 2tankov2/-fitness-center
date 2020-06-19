@@ -1,9 +1,11 @@
 .trainers {
-  /*width: 1160px;*/
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .trainers h2 {

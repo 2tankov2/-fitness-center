@@ -11,10 +11,14 @@
 
 @media (max-width: $tablet-width) {
   .contacts {
-    width: 69.3%;
-    padding-left: 133px;
+    width: auto;
+    padding-left: 86px;
     padding-top: 67px;
     padding-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .contacts h2 {
@@ -24,7 +28,7 @@
 
 @media (max-width: $mobile-width) {
   .contacts {
-    width: 100%;
-    padding-left: 15px;
+    width: auto;
+    padding-left: 0;
   }
 }
