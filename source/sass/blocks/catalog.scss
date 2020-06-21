@@ -24,7 +24,8 @@
   margin-bottom: 10px;
   box-sizing: border-box;
 
-  &:nth-child(3n) {
+  &:nth-child(3n),
+  &:last-child {
     margin-right: 0;
   }
 
@@ -100,7 +101,8 @@
     margin: 0 auto;
     margin-bottom: 40px;
 
-    &:nth-child(3n) {
+    &:nth-child(3n),
+    &:last-child {
       margin: 0 auto;
     }
 

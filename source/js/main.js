@@ -141,19 +141,6 @@ var multiItemSlider = (function () {
       }
     };
 
-    mainElement.addEventListener('mousedown', function (e) {
-      startX = e.clientX;
-    });
-    mainElement.addEventListener('mouseup', function (e) {
-      var endX = e.clientX;
-      var deltaX = endX - startX;
-      if (deltaX > 50) {
-        transformItem('left');
-      } else if (deltaX < -50) {
-        transformItem('right');
-      }
-    });
-
     var setUpListeners = function () {
     // добавление к кнопкам "назад" и "вперед" обработчика _controlClick для события click
       sliderControls.forEach(function (item) {
