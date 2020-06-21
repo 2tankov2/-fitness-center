@@ -2,54 +2,15 @@
   width: 560px;
 }
 
-.trainers-swiper-container {
-  width: 98%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: center;
-}
-
-.trainers-swiper-container .swiper-wrapper {
-  width: 92%;
-  margin: 0 auto;
-
-
-}
-
-.trainers-swiper-container .swiper-wrapper div {
-  flex-grow: 0;
-  flex-shrink: 1;
-}
-
 @media (max-width: $tablet-width) {
   .swiper-container {
     width: 566px;
-  }
-
-  .trainers-swiper-container {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 626px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .swiper-container {
     width: 226px;
-  }
-
-  .trainers-swiper-container {
-    width: 266px;
-  }
-
-  .trainers-swiper-container .swiper-wrapper div {
-    flex-shrink: 0;
   }
 }
 

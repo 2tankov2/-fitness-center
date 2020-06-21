@@ -5,8 +5,6 @@
 
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
 }
 
 .trainers-list__item {
@@ -14,7 +12,6 @@
   width: 260px;
   max-height: 294px;
   color: #ffffff;
-  justify-content: space-between;
 
   &:hover,
   &:focus {
@@ -34,27 +31,14 @@
 
 
 @media (max-width: $tablet-width) {
-  .trainers-list {
-    width: 566px;
-    margin: 0 auto;
-  }
-
   .trainers-list__item {
     width: 268px;
-    height: 294px;
-    flex-shrink: 1;
-    margin: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .trainers-list {
-    width: 226px;
-  }
-
   .trainers-list__item {
     width: 226px;
     height: 274px;
-    margin: 0 auto;
   }
 }

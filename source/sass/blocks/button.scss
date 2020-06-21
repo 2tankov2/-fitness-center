@@ -65,6 +65,7 @@
   border-left: 1px solid #afafaf;
   transform: rotate(45deg);
   z-index: 1;
+  outline: 0;
 
   &:hover {
     background-color: transparent;
@@ -81,6 +82,7 @@
   border-right: 1px solid #afafaf;
   transform: rotate(-45deg);
   z-index: 1;
+  outline: 0;
 
   &:hover {
     background-color: transparent;
@@ -88,13 +90,13 @@
 }
 
 .button--trainers-back {
-  left: -4%;
-  bottom: 135px;
+  left: -2.4%;
+  bottom: 49%;
 }
 
 .button--trainers-next {
-  right: -4%;
-  bottom: 135px;
+  right: -2.4%;
+  bottom: 49%;
 }
 
 .button--reviews-back {
@@ -134,11 +136,11 @@
   }
 
   .button--trainers-back {
-    left: 5px;
+    left: -6%;
   }
 
   .button--trainers-next {
-    right: 5px;
+    right: -6%;
   }
 
   .button--reviews-back {
@@ -161,9 +163,17 @@
 
   .button--trainers-back,
   .button--trainers-next {
-    bottom: 130px;
     width: 14px;
     height: 14px;
+    bottom: 47.4%;
+  }
+
+  .button--trainers-back {
+    left: -3%;
+  }
+
+  .button--trainers-next {
+    right: -3%;
   }
 
   .button--reviews-back {

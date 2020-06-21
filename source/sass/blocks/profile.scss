@@ -1,11 +1,11 @@
 .profile {
   position: relative;
-  width: 100%;
+  width: 260px;
   height: 294px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /*margin-right: 3.5%;*/
+  margin: 0 auto;
 }
 
 .profile p {
@@ -29,7 +29,7 @@
   object-fit: contain;
   object-position: bottom;
   height: 294px;
-  width: 268px;
+  width: 260px;
 }
 
 @media (max-width: $tablet-width) {

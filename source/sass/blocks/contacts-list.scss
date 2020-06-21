@@ -94,6 +94,10 @@
     display: none;
   }
 
+  .contacts-list__item {
+    padding-right: 0;
+  }
+
   .contacts-list__item--tel {
     order: 2;
   }

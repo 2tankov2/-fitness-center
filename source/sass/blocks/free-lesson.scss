@@ -95,7 +95,11 @@
   }
 
   .free-lesson__item input {
-    width: 100%;
+    width: 98%;
     margin-bottom: 35px;
   }
+
+  .free-lesson__item input[type="text"] {
+    margin-right: 0;
+}
 }

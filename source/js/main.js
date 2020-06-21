@@ -56,78 +56,143 @@
 }());
 
 // слайдер блока <тренеры>
-var sectionTrainers = document.querySelector('.trainers');
-var trainers = sectionTrainers.querySelectorAll('.trainers-list__item');
-var btnPrev = sectionTrainers.querySelector('.button--trainers-back');
-var btnNext = sectionTrainers.querySelector('.button--trainers-next');
+var multiItemSlider = (function () {
+  return function (selector, config) {
+    var mainElement = document.querySelector(selector); // основной элемент блока
+    var sliderWrapper = mainElement.querySelector('.slider__wrapper'); // обёртка для slider__item
+    var sliderItems = mainElement.querySelectorAll('.slider__item'); // элементы (.slider-item)
+    var sliderControls = mainElement.querySelectorAll('.slider__control'); // элементы управления
+    var wrapperWidth = parseFloat(getComputedStyle(sliderWrapper).width); // ширина обёртки
+    var itemWidth = parseFloat(getComputedStyle(sliderItems[0]).width); // ширина одного элемента
+    var positionLeftItem = 0; // позиция левого активного элемента
+    var transform = 0; // значение трансформации .slider_wrapper
+    var step = itemWidth / wrapperWidth * 100; // величина шага (для трансформации)
+    var items = []; // массив элементов
+    var startX = 0;
+    // наполнение массива _items
+    sliderItems.forEach(function (item, index) {
+      items.push({
+        item: item, position: index, transform: 0
+      });
+    });
 
-function viewBlock(index) {
-  trainers.forEach((item, i) => {
-    if (i >= index) {
-      item.classList.add('trainers-list__item--closed');
-    } else {
-      item.classList.remove('trainers-list__item--closed');
-    }
-  });
-}
+    var position = {
+      getItemMin: function () {
+        var indexItem = 0;
+        items.forEach(function (item, index) {
+          if (item.position < items[indexItem].position) {
+            indexItem = index;
+          }
+        });
+        return indexItem;
+      },
+      getItemMax: function () {
+        var indexItem = 0;
+        items.forEach(function (item, index) {
+          if (item.position > items[indexItem].position) {
+            indexItem = index;
+          }
+        });
+        return indexItem;
+      },
+      getMin: function () {
+        return items[position.getItemMin()].position;
+      },
+      getMax: function () {
+        return items[position.getItemMax()].position;
+      }
+    };
 
-if (window.screen.width < 768) {
-  viewBlock(1);
-} else if (window.screen.width < 1200) {
-  viewBlock(2);
-} else if (window.screen.width >= 1200) {
-  viewBlock(4);
-}
+    var transformItem = function (direction) {
+      var nextItem;
+      if (direction === 'right') {
+        positionLeftItem++;
+        if ((positionLeftItem + wrapperWidth / itemWidth - 1) > position.getMax()) {
+          nextItem = position.getItemMin();
+          items[nextItem].position = position.getMax() + 1;
+          items[nextItem].transform += items.length * 100;
+          items[nextItem].item.style.transform = 'translateX(' + items[nextItem].transform + '%)';
+        }
+        transform -= step;
+      }
+      if (direction === 'left') {
+        positionLeftItem--;
+        if (positionLeftItem < position.getMin()) {
+          nextItem = position.getItemMax();
+          items[nextItem].position = position.getMin() - 1;
+          items[nextItem].transform -= items.length * 100;
+          items[nextItem].item.style.transform = 'translateX(' + items[nextItem].transform + '%)';
+        }
+        transform += step;
+      }
+      sliderWrapper.style.transform = 'translateX(' + transform + '%)';
+    };
 
-function viewBlock2(i, count) {
-  trainers.forEach((item, index) => {
-    if (index < i || (index >= (i + count))) {
-      item.classList.add('trainers-list__item--closed');
-    } else {
-      item.classList.remove('trainers-list__item--closed');
-    }
-  });
-}
+    // обработчик события click для кнопок "назад" и "вперед"
+    var controlClick = function (e) {
+      if (e.target.classList.contains('slider__control')) {
+        e.preventDefault();
+        var direction = e.target.classList.contains('slider__control-right') ? 'right' : 'left';
+        var count = Math.round(100 / step);
+        while (count > 0) {
+          transformItem(direction);
+          count--;
+        }
+      }
+    };
 
-let currentTrainer = 0;
+    mainElement.addEventListener('mousedown', function (e) {
+      startX = e.clientX;
+    });
+    mainElement.addEventListener('mouseup', function (e) {
+      var endX = e.clientX;
+      var deltaX = endX - startX;
+      if (deltaX > 50) {
+        transformItem('left');
+      } else if (deltaX < -50) {
+        transformItem('right');
+      }
+    });
 
-btnNext.onclick = function () {
-  let i = currentTrainer;
-  if (trainers.length > i) {
-    if (window.screen.width < 768 && (i < trainers.length - 1 && i < currentTrainer + 1)) {
-      i++;
-      viewBlock2(i, 1);
-    } else if (window.screen.width < 1200 && (i < trainers.length - 2 && i < currentTrainer + 2)) {
-      i = i + 2;
-      viewBlock2(i, 2);
-    } else if (window.screen.width >= 1200 && (i < trainers.length - 4 && i < currentTrainer + 4)) {
-      i = i + 4;
-      viewBlock2(i, 4);
-    }
-  }
-  currentTrainer = i;
-};
+    var setUpListeners = function () {
+    // добавление к кнопкам "назад" и "вперед" обработчика _controlClick для события click
+      sliderControls.forEach(function (item) {
+        item.addEventListener('click', controlClick);
+      });
 
-btnPrev.onclick = function () {
-  let i = currentTrainer;
-  if (i > 0) {
-    if (window.screen.width < 768 && (i >= 1)) {
-      i--;
-      viewBlock2(i, 1);
-    } else if (window.screen.width < 1200 && (i >= 2)) {
-      i = i - 2;
-      viewBlock2(i, 2);
-    } else if (window.screen.width >= 1200 && (i >= 4)) {
-      i = i - 4;
-      viewBlock2(i, 4);
-    }
-  }
-  currentTrainer = i;
-};
+      mainElement.addEventListener('touchstart', function (e) {
+        startX = e.changedTouches[0].clientX;
+      });
+      mainElement.addEventListener('touchend', function (e) {
+        var endX = e.changedTouches[0].clientX;
+        var deltaX = endX - startX;
+        if (deltaX > 50) {
+          transformItem('left');
+        } else if (deltaX < -50) {
+          transformItem('right');
+        }
+      });
+    };
 
+    // инициализация
+    setUpListeners();
+
+    return {
+      right: function () { // метод right
+        transformItem('right');
+      },
+      left: function () { // метод left
+        transformItem('left');
+      }
+    };
+  };
+}());
+
+var slider = multiItemSlider('.slider');
+
+// слайдер блока <отзывы>
 window.onload = function () {
   var reviewsSwiper = new Swiper ('.swiper-container', {
-    // Optional parameter
     direction: 'horizontal',
     loop: true,
     effect: 'flip',
