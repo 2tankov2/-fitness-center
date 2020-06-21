@@ -1234,6 +1234,7 @@ input[type=radio].visually-hidden {
   box-sizing: border-box;
 }
 
+.catalog-item:last-child,
 .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -1313,6 +1314,7 @@ input[type=radio].visually-hidden {
     margin: 0 auto 40px;
   }
 
+  .catalog-item:last-child,
   .catalog-item:nth-child(3n) {
     margin: 0 auto;
   }

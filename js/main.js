@@ -56,15 +56,12 @@
 }());
 
 // слайдер блока <тренеры>
-
 var multiItemSlider = (function () {
   return function (selector, config) {
     var mainElement = document.querySelector(selector); // основной элемент блока
     var sliderWrapper = mainElement.querySelector('.slider__wrapper'); // обёртка для slider__item
     var sliderItems = mainElement.querySelectorAll('.slider__item'); // элементы (.slider-item)
     var sliderControls = mainElement.querySelectorAll('.slider__control'); // элементы управления
-    var sliderControlLeft = mainElement.querySelector('.slider__control-left'); // кнопка LEFT
-    var sliderControlRight = mainElement.querySelector('.slider__control-right'); // кнопка RIGHT
     var wrapperWidth = parseFloat(getComputedStyle(sliderWrapper).width); // ширина обёртки
     var itemWidth = parseFloat(getComputedStyle(sliderItems[0]).width); // ширина одного элемента
     var positionLeftItem = 0; // позиция левого активного элемента
@@ -144,19 +141,6 @@ var multiItemSlider = (function () {
       }
     };
 
-    mainElement.addEventListener('mousedown', function (e) {
-      startX = e.clientX;
-    });
-    mainElement.addEventListener('mouseup', function (e) {
-      var endX = e.clientX;
-      var deltaX = endX - startX;
-      if (deltaX > 50) {
-        transformItem('left');
-      } else if (deltaX < -50) {
-        transformItem('right');
-      }
-    });
-
     var setUpListeners = function () {
     // добавление к кнопкам "назад" и "вперед" обработчика _controlClick для события click
       sliderControls.forEach(function (item) {
@@ -192,161 +176,6 @@ var multiItemSlider = (function () {
 }());
 
 var slider = multiItemSlider('.slider');
-
-/*
-var sectionTrainers = document.querySelector('.trainers');
-var trainers = sectionTrainers.querySelectorAll('.trainers-list__item');
-var btnPrev = sectionTrainers.querySelector('.button--trainers-back');
-var btnNext = sectionTrainers.querySelector('.button--trainers-next');
-
-function viewBlock(index) {
-  trainers.forEach((item, i) => {
-    if (i >= index) {
-      item.classList.add('trainers-list__item--closed');
-    } else {
-      item.classList.remove('trainers-list__item--closed');
-    }
-  });
-}
-
-if (window.screen.width < 768) {
-  viewBlock(1);
-} else if (window.screen.width < 1200) {
-  viewBlock(2);
-} else if (window.screen.width >= 1200) {
-  viewBlock(4);
-}
-
-function viewBlock2(i, count) {
-  trainers.forEach((item, index) => {
-    if (index < i || (index >= (i + count))) {
-      item.classList.add('trainers-list__item--closed');
-    } else {
-      item.classList.remove('trainers-list__item--closed');
-    }
-  });
-}
-
-let currentTrainer = 0;
-
-btnNext.onclick = function () {
-  let i = currentTrainer;
-  if (trainers.length > i) {
-    if (window.screen.width < 768 && (i < trainers.length - 1 && i < currentTrainer + 1)) {
-      i++;
-      viewBlock2(i, 1);
-    } else if (window.screen.width < 1200 && (i < trainers.length - 2 && i < currentTrainer + 2)) {
-      i = i + 2;
-      viewBlock2(i, 2);
-    } else if (window.screen.width >= 1200 && (i < trainers.length - 4 && i < currentTrainer + 4)) {
-      i = i + 4;
-      viewBlock2(i, 4);
-    }
-  }
-  currentTrainer = i;
-};
-
-btnPrev.onclick = function () {
-  let i = currentTrainer;
-  if (i > 0) {
-    if (window.screen.width < 768 && (i >= 1)) {
-      i--;
-      viewBlock2(i, 1);
-    } else if (window.screen.width < 1200 && (i >= 2)) {
-      i = i - 2;
-      viewBlock2(i, 2);
-    } else if (window.screen.width >= 1200 && (i >= 4)) {
-      i = i - 4;
-      viewBlock2(i, 4);
-    }
-  }
-  currentTrainer = i;
-};
-
-// слайдер блока <тренеры> №2
-let mouse = {
-  pressed: false,
-  lastX: 0
-};
-let ul = null;
-
-function mouseDown(e) {
-  mouse.pressed = true;
-  ul.style.transition = 'all 0s';
-  mouse.lastX = e.clientX;
-}
-
-function mouseUp(e) {
-  if (!mouse.pressed) {
-    return;
-  }
-  mouse.pressed = false;
-  ul.style.transition = 'all 0.5s';
-  let trainers = document.body.querySelector('.trainers').getBoundingClientRect();
-  let left = ul.getBoundingClientRect().x - trainers.x;
-  left = Math.round(left / 300) * 300;
-  let maxLeft = document.querySelector('.trainers-list li:last-child');
-  maxLeft = -(maxLeft.offsetLeft + maxLeft.offsetWidth - trainers.width);
-  if (left < maxLeft) {
-    left = maxLeft;
-  }
-  if (left > 0) {
-    left = 0;
-  }
-  ul.style.left = left + 'px';
-}
-
-function mouseMove(e) {
-  if (!mouse.pressed) {
-    return;
-  }
-  if (e.buttons === 0) {
-    return;
-  }
-  let trainers = document.body.querySelector('.trainers').getBoundingClientRect();
-  let left = ul.getBoundingClientRect().x - trainers.x;
-  ul.style.left = left + e.clientX - mouse.lastX + 'px';
-  console.log(e);
-  mouse.lastX = e.clientX;
-}
-
-function move(direction) {
-  let trainers = document.body.querySelector('.trainers').getBoundingClientRect();
-  let left = ul.getBoundingClientRect().x - trainers.x;
-  let maxLeft = document.querySelector('.trainers-list li:last-child');
-  maxLeft = -(maxLeft.offsetLeft + maxLeft.offsetWidth - trainers.width);
-  switch (direction) {
-    case 'left':
-      left = left - trainers.width;
-      ul.style.left = left + 'px';
-      if (left < maxLeft) {
-        ul.style.left = maxLeft - 200 + 'px';
-        setTimeout(() => {
-          ul.style.left = maxLeft + 'px'
-        }, 400);
-      }
-      break;
-    case 'right':
-      left = left + trainers.width;
-      ul.style.left = left + 'px';
-      if (left > 0) {
-        ul.style.left = 200 + 'px';
-        setTimeout(() => {
-          ul.style.left = 0 + 'px'
-        }, 400);
-      }
-      break;
-  }
-}
-
-var carousel = document.querySelector('.container--trainers');
-
-carousel.onmousedown = mouseDown;
-carousel.onmouseup = mouseUp;
-carousel.onmouseout = mouseUp;
-carousel.onmousemove = mouseMove;
-ul = document.body.querySelector('.trainers-list');
-*/
 
 // слайдер блока <отзывы>
 window.onload = function () {
