@@ -346,15 +346,15 @@ input[type=radio].visually-hidden {
   }
 
   .button--reviews-back {
-    left: -10%;
-    bottom: 159px;
+    left: -13%;
+    bottom: 47%;
     width: 17px;
     height: 17px;
   }
 
   .button--reviews-next {
-    right: -10%;
-    bottom: 159px;
+    right: -13%;
+    bottom: 47%;
     width: 17px;
     height: 17px;
   }
@@ -857,8 +857,8 @@ input[type=radio].visually-hidden {
 
 .services-list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0 3% 0 0;
 }
 
 .services-list li {
@@ -1155,7 +1155,6 @@ input[type=radio].visually-hidden {
   position: relative;
   padding-right: 34px;
   font-size: 20px;
-  line-height: 150%;
 }
 
 .months-list__item:last-child {
@@ -1186,11 +1185,15 @@ input[type=radio].visually-hidden {
 @media (max-width:767px) {
   .months-list__item {
     font-size: 16px;
-    padding-right: 28px;
+    padding-right: 45px;
   }
 
   .months-list__item a {
     padding-bottom: 14px;
+  }
+
+  .months-list__button {
+    padding: 0 0 17px;
   }
 }
 
@@ -2109,7 +2112,7 @@ input[type=radio].visually-hidden {
     padding-bottom: 7px;
   }
 
-  .advantages-list__item--text {
+  .advantages-list__item-text {
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -2883,7 +2886,7 @@ input[type=radio].visually-hidden {
   .page-footer__menu a {
     padding-left: 0;
     padding-bottom: 22px;
-    padding-right: 90px;
+    padding-right: 30px;
     width: 70px;
   }
 

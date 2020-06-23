@@ -12,7 +12,7 @@
   padding-right: 34px;
 
   font-size: 20px;
-  line-height: 150%;
+
   /* or 30px */
 
   &:last-child {
@@ -44,10 +44,15 @@
 @media (max-width: $mobile-width) {
   .months-list__item {
     font-size: 16px;
-    padding-right: 28px;
+    padding-right: 45px;
   }
 
   .months-list__item a {
     padding-bottom: 14px;
+  }
+
+  .months-list__button {
+    padding: 0;
+    padding-bottom: 17px;
   }
 }
