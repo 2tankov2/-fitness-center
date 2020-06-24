@@ -2408,7 +2408,6 @@ input[type=radio].visually-hidden {
 .reviews__item-info {
   position: relative;
   width: 328px;
-  height: 100%;
   color: #fff;
   padding: 54px 63px 57px 170px;
   background-color: #1c3374;
