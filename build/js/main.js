@@ -184,7 +184,6 @@ window.onload = function () {
     loop: true,
     effect: 'flip',
     grabCursor: true,
-    autoHeight: true,
     pagination: {
       el: '.swiper-pagination',
     },
