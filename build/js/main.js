@@ -181,7 +181,6 @@ var slider = multiItemSlider('.slider');
 window.onload = function () {
   var reviewsSwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
-    loop: true,
     effect: 'flip',
     grabCursor: true,
     pagination: {
@@ -200,13 +199,13 @@ window.onload = function () {
 // одинаковая высота слайдов Swiper при увеличении контента внутри слайдов
 var sliders = document.querySelectorAll('.reviews__item');
 const wrapper = document.querySelector('.swiper-wrapper');
-
+/*
 sliders.forEach((slide) => {
   slide.style.height = '';
 });
-
-setTimeout(() => {
+*/
+setInterval(() => {
   sliders.forEach((slide) => {
-    slide.style.height = wrapper.clientHeight + 'px';
+    slide.style.height = wrapper.scrollHeight + 'px';
   });
 }, 300);
